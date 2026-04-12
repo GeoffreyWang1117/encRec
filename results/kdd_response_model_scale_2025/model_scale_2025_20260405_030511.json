@@ -1,0 +1,17 @@
+{
+  "timestamp": "20260405_030511",
+  "args": {
+    "samples": 1000,
+    "runs": 3,
+    "pool_size": 20,
+    "device": "cuda:0",
+    "seeds": "42,43,44",
+    "models": "Qwen3-8B,Llama3.1-8B",
+    "scoring_only": "perplexity",
+    "output_dir": "results/kdd_response_model_scale_2025"
+  },
+  "results": {
+    "Qwen3-8B (2025)": {},
+    "Llama3.1-8B (2024)": {}
+  }
+}

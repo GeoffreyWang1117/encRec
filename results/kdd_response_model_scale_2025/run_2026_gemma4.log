@@ -1,0 +1,90 @@
+2026-04-06 03:06:35,458 - INFO - Device: cuda:0 | device_map: per-model
+2026-04-06 03:06:35,688 - INFO - Loading MIND 300 samples ...
+2026-04-06 03:06:35,688 - INFO - Loading MIND large train from /home/coder-gw/Projects/encRec/data/mind/MINDlarge_train
+2026-04-06 03:06:36,149 - INFO - Loaded 101527 news articles
+2026-04-06 03:06:36,400 - INFO - Loaded 2937 behavior records
+2026-04-06 03:06:36,402 - INFO - Created 300 recommendation samples
+2026-04-06 03:06:36,426 - INFO - Models to evaluate: ['Gemma-4-E2B (2026)']
+2026-04-06 03:06:36,426 - INFO - 
+============================================================
+Gemma-4-E2B (2026)
+============================================================
+2026-04-06 03:06:36,426 - INFO -   Seed 42 ...
+2026-04-06 03:06:40,037 - INFO -   Loading google/gemma-4-E2B-it (quant=None, text_only=True) ...
+2026-04-06 03:06:40,239 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-4-E2B-it/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-06 03:06:40,337 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/gemma-4-E2B-it/4742fe843cc01b9aed62122f6e0ddd13ea48b3d3/config.json "HTTP/1.1 200 OK"
+2026-04-06 03:06:40,581 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-4-E2B-it/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-06 03:06:40,679 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/gemma-4-E2B-it/4742fe843cc01b9aed62122f6e0ddd13ea48b3d3/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-06 03:06:40,797 - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-4-E2B-it/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-06 03:06:40,904 - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-4-E2B-it/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-06 03:06:41,015 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-4-E2B-it/resolve/main/added_tokens.json "HTTP/1.1 404 Not Found"
+2026-04-06 03:06:41,127 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-4-E2B-it/resolve/main/special_tokens_map.json "HTTP/1.1 404 Not Found"
+2026-04-06 03:06:43,045 - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-4-E2B-it "HTTP/1.1 200 OK"
+2026-04-06 03:06:43,176 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-4-E2B-it/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-06 03:06:43,198 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/gemma-4-E2B-it/4742fe843cc01b9aed62122f6e0ddd13ea48b3d3/config.json "HTTP/1.1 200 OK"
+2026-04-06 03:06:43,313 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-4-E2B-it/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-04-06 03:06:43,525 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-4-E2B-it/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-06 03:06:43,548 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/gemma-4-E2B-it/4742fe843cc01b9aed62122f6e0ddd13ea48b3d3/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/2011 [00:00<?, ?it/s]Loading weights:  12%|█▏        | 251/2011 [00:00<00:00, 2473.65it/s]Loading weights:  25%|██▍       | 499/2011 [00:00<00:00, 2383.61it/s]Loading weights:  37%|███▋      | 738/2011 [00:00<00:00, 2311.77it/s]Loading weights:  48%|████▊     | 970/2011 [00:04<00:07, 144.63it/s] Loading weights:  55%|█████▌    | 1113/2011 [00:05<00:06, 129.36it/s]Loading weights:  60%|██████    | 1208/2011 [00:06<00:05, 136.96it/s]Loading weights:  64%|██████▎   | 1277/2011 [00:06<00:05, 144.98it/s]Loading weights:  66%|██████▌   | 1330/2011 [00:06<00:04, 153.72it/s]Loading weights:  68%|██████▊   | 1374/2011 [00:07<00:03, 169.56it/s]Loading weights:  82%|████████▏ | 1639/2011 [00:07<00:01, 364.38it/s]Loading weights:  94%|█████████▎| 1885/2011 [00:07<00:00, 575.44it/s]Loading weights: 100%|██████████| 2011/2011 [00:07<00:00, 276.52it/s]
+2026-04-06 03:06:51,605 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-4-E2B-it/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-06 03:06:51,701 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/gemma-4-E2B-it/4742fe843cc01b9aed62122f6e0ddd13ea48b3d3/generation_config.json "HTTP/1.1 200 OK"
+2026-04-06 03:06:51,803 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-4-E2B-it/resolve/main/custom_generate/generate.py "HTTP/1.1 404 Not Found"
+2026-04-06 03:06:51,810 - INFO -   Loaded — 5.12B parameters
+2026-04-06 03:09:19,226 - INFO -     [100/300] running Hit@5=0.250, lat=1429ms
+2026-04-06 03:11:43,253 - INFO -     [200/300] running Hit@5=0.260, lat=1415ms
+2026-04-06 03:14:08,095 - INFO -     [300/300] running Hit@5=0.277, lat=1411ms
+2026-04-06 03:14:08,780 - INFO -     Hit@5=0.277, Trie=0.330, lat=1411ms
+2026-04-06 03:14:08,780 - INFO -   Seed 43 ...
+2026-04-06 03:14:08,786 - INFO -   Loading google/gemma-4-E2B-it (quant=None, text_only=True) ...
+2026-04-06 03:14:08,975 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-4-E2B-it/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-06 03:14:09,003 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/gemma-4-E2B-it/4742fe843cc01b9aed62122f6e0ddd13ea48b3d3/config.json "HTTP/1.1 200 OK"
+2026-04-06 03:14:09,114 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-4-E2B-it/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-06 03:14:09,143 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/gemma-4-E2B-it/4742fe843cc01b9aed62122f6e0ddd13ea48b3d3/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-06 03:14:09,255 - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-4-E2B-it/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-06 03:14:09,361 - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-4-E2B-it/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-06 03:14:11,261 - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-4-E2B-it "HTTP/1.1 200 OK"
+2026-04-06 03:14:11,393 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-4-E2B-it/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-06 03:14:11,418 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/gemma-4-E2B-it/4742fe843cc01b9aed62122f6e0ddd13ea48b3d3/config.json "HTTP/1.1 200 OK"
+2026-04-06 03:14:11,522 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-4-E2B-it/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-06 03:14:11,546 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/gemma-4-E2B-it/4742fe843cc01b9aed62122f6e0ddd13ea48b3d3/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/2011 [00:00<?, ?it/s]Loading weights:  20%|██        | 406/2011 [00:00<00:00, 4042.64it/s]Loading weights:  40%|████      | 811/2011 [00:00<00:01, 797.74it/s] Loading weights:  50%|█████     | 1008/2011 [00:01<00:01, 947.97it/s]Loading weights:  59%|█████▉    | 1196/2011 [00:01<00:00, 949.46it/s]Loading weights:  67%|██████▋   | 1347/2011 [00:01<00:00, 965.47it/s]Loading weights:  90%|█████████ | 1812/2011 [00:01<00:00, 1639.92it/s]Loading weights: 100%|██████████| 2011/2011 [00:01<00:00, 1343.12it/s]
+2026-04-06 03:14:13,639 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-4-E2B-it/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-06 03:14:13,662 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/gemma-4-E2B-it/4742fe843cc01b9aed62122f6e0ddd13ea48b3d3/generation_config.json "HTTP/1.1 200 OK"
+2026-04-06 03:14:13,762 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-4-E2B-it/resolve/main/custom_generate/generate.py "HTTP/1.1 404 Not Found"
+2026-04-06 03:14:13,769 - INFO -   Loaded — 5.12B parameters
+2026-04-06 03:16:38,078 - INFO -     [100/300] running Hit@5=0.250, lat=1398ms
+2026-04-06 03:19:05,258 - INFO -     [200/300] running Hit@5=0.285, lat=1416ms
+2026-04-06 03:21:31,385 - INFO -     [300/300] running Hit@5=0.290, lat=1416ms
+2026-04-06 03:21:31,656 - INFO -     Hit@5=0.290, Trie=0.320, lat=1416ms
+2026-04-06 03:21:31,657 - INFO -   Seed 44 ...
+2026-04-06 03:21:31,657 - INFO -   Loading google/gemma-4-E2B-it (quant=None, text_only=True) ...
+2026-04-06 03:21:31,860 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-4-E2B-it/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-06 03:21:31,882 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/gemma-4-E2B-it/4742fe843cc01b9aed62122f6e0ddd13ea48b3d3/config.json "HTTP/1.1 200 OK"
+2026-04-06 03:21:31,992 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-4-E2B-it/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-06 03:21:32,022 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/gemma-4-E2B-it/4742fe843cc01b9aed62122f6e0ddd13ea48b3d3/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-06 03:21:32,125 - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-4-E2B-it/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-06 03:21:32,227 - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-4-E2B-it/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-06 03:21:34,182 - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-4-E2B-it "HTTP/1.1 200 OK"
+2026-04-06 03:21:34,310 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-4-E2B-it/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-06 03:21:34,335 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/gemma-4-E2B-it/4742fe843cc01b9aed62122f6e0ddd13ea48b3d3/config.json "HTTP/1.1 200 OK"
+2026-04-06 03:21:34,446 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-4-E2B-it/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-06 03:21:34,472 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/gemma-4-E2B-it/4742fe843cc01b9aed62122f6e0ddd13ea48b3d3/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/2011 [00:00<?, ?it/s]Loading weights:  21%|██        | 426/2011 [00:00<00:00, 4233.85it/s]Loading weights:  42%|████▏     | 850/2011 [00:00<00:01, 800.60it/s] Loading weights:  52%|█████▏    | 1055/2011 [00:01<00:01, 886.08it/s]Loading weights:  61%|██████    | 1221/2011 [00:01<00:00, 913.92it/s]Loading weights:  68%|██████▊   | 1362/2011 [00:01<00:00, 958.60it/s]Loading weights:  91%|█████████ | 1828/2011 [00:01<00:00, 1636.22it/s]Loading weights: 100%|██████████| 2011/2011 [00:01<00:00, 1310.77it/s]
+2026-04-06 03:21:36,616 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-4-E2B-it/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-06 03:21:36,637 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/gemma-4-E2B-it/4742fe843cc01b9aed62122f6e0ddd13ea48b3d3/generation_config.json "HTTP/1.1 200 OK"
+2026-04-06 03:21:36,743 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-4-E2B-it/resolve/main/custom_generate/generate.py "HTTP/1.1 404 Not Found"
+2026-04-06 03:21:36,750 - INFO -   Loaded — 5.12B parameters
+2026-04-06 03:24:01,794 - INFO -     [100/300] running Hit@5=0.270, lat=1405ms
+2026-04-06 03:26:28,638 - INFO -     [200/300] running Hit@5=0.245, lat=1419ms
+2026-04-06 03:28:54,773 - INFO -     [300/300] running Hit@5=0.260, lat=1417ms
+2026-04-06 03:28:54,997 - INFO -     Hit@5=0.260, Trie=0.343, lat=1417ms
+2026-04-06 03:28:55,076 - INFO - 
+Saved: results/kdd_response_model_scale_2025/model_scale_2026_20260406_032855.json
+
+===========================================================================
+2026 MODEL SCALE — Hit@5 Comparison (MIND Large, perplexity scoring)
+===========================================================================
+Model                       Year  Params          Hit@5    Lat(ms)
+---------------------------------------------------------------------------
+  Gemma-4-E2B (2026)        2026    1.0B  0.276±0.012     1415ms
+===========================================================================

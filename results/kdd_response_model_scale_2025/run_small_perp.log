@@ -1,0 +1,102 @@
+2026-04-04 23:39:33,004 - INFO - Device: cuda:0 | Samples: 2000 | Runs: 3
+2026-04-04 23:39:33,219 - INFO - Loading MIND 2000 samples ...
+2026-04-04 23:39:33,219 - INFO - Loading MIND large train from /home/coder-gw/Projects/encRec/data/mind/MINDlarge_train
+2026-04-04 23:39:33,445 - INFO - Loaded 101527 news articles
+2026-04-04 23:39:33,823 - INFO - Loaded 19565 behavior records
+2026-04-04 23:39:33,832 - INFO - Created 2000 recommendation samples
+2026-04-04 23:39:33,916 - INFO - Models to evaluate: ['GPT-2 (124M, 2019)', 'Gemma-2-2B (2024)', 'Qwen3-1.7B (2025)', 'Qwen2.5-3B (2024)']
+2026-04-04 23:39:33,916 - INFO - 
+============================================================
+GPT-2 (124M, 2019) [perplexity]
+============================================================
+2026-04-04 23:39:33,916 - INFO -   Seed 42 ...
+2026-04-04 23:39:36,341 - INFO -   Loading gpt2 ...
+2026-04-04 23:39:36,551 - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-04 23:39:36,663 - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-04 23:39:36,772 - INFO - HTTP Request: GET https://huggingface.co/api/models/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-04-04 23:39:36,871 - INFO - HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-04 23:39:36,975 - INFO - HTTP Request: GET https://huggingface.co/api/models/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-04-04 23:39:37,082 - INFO - HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-04 23:39:37,423 - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-04 23:39:37,822 - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 2089.63it/s]
+2026-04-04 23:39:38,255 - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/generation_config.json "HTTP/1.1 200 OK"
+2026-04-04 23:39:38,367 - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/custom_generate/generate.py "HTTP/1.1 404 Not Found"
+2026-04-04 23:39:38,368 - INFO -   Loaded — 0.12B parameters
+`loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+2026-04-04 23:44:58,707 - INFO -     Hit@5=0.385, Trie=0.313, lat=121ms
+2026-04-04 23:44:58,707 - INFO -   Seed 43 ...
+2026-04-04 23:44:58,708 - INFO -   Loading gpt2 ...
+2026-04-04 23:44:58,897 - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-04 23:44:59,008 - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-04 23:44:59,111 - INFO - HTTP Request: GET https://huggingface.co/api/models/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-04-04 23:44:59,212 - INFO - HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-04 23:44:59,315 - INFO - HTTP Request: GET https://huggingface.co/api/models/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-04-04 23:44:59,423 - INFO - HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-04 23:44:59,675 - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-04 23:44:59,786 - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 2032.11it/s]
+2026-04-04 23:45:00,005 - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/generation_config.json "HTTP/1.1 200 OK"
+2026-04-04 23:45:00,113 - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/custom_generate/generate.py "HTTP/1.1 404 Not Found"
+2026-04-04 23:45:00,114 - INFO -   Loaded — 0.12B parameters
+2026-04-04 23:50:13,876 - INFO -     Hit@5=0.391, Trie=0.328, lat=118ms
+2026-04-04 23:50:13,876 - INFO -   Seed 44 ...
+2026-04-04 23:50:13,877 - INFO -   Loading gpt2 ...
+2026-04-04 23:50:14,045 - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-04 23:50:14,149 - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-04 23:50:14,254 - INFO - HTTP Request: GET https://huggingface.co/api/models/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-04-04 23:50:14,363 - INFO - HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-04 23:50:14,468 - INFO - HTTP Request: GET https://huggingface.co/api/models/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-04-04 23:50:14,568 - INFO - HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-04 23:50:14,794 - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-04 23:50:14,897 - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 2115.39it/s]
+2026-04-04 23:50:15,118 - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/generation_config.json "HTTP/1.1 200 OK"
+2026-04-04 23:50:15,229 - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/custom_generate/generate.py "HTTP/1.1 404 Not Found"
+2026-04-04 23:50:15,230 - INFO -   Loaded — 0.12B parameters
+2026-04-04 23:55:35,213 - INFO -     Hit@5=0.388, Trie=0.308, lat=122ms
+2026-04-04 23:55:35,214 - INFO - 
+============================================================
+Gemma-2-2B (2024) [perplexity]
+============================================================
+2026-04-04 23:55:35,214 - INFO -   Seed 42 ...
+2026-04-04 23:55:35,214 - INFO -   Loading google/gemma-2-2b-it ...
+2026-04-04 23:55:35,405 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-2-2b-it/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-04 23:55:35,526 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-2-2b-it/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-04 23:55:35,632 - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-2-2b-it/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-04 23:55:35,735 - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-2-2b-it/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-04 23:55:36,654 - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-2-2b-it "HTTP/1.1 200 OK"
+2026-04-04 23:55:36,778 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-2-2b-it/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-04 23:55:36,892 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-2-2b-it/resolve/main/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/288 [00:00<?, ?it/s]Loading weights:   0%|          | 1/288 [00:00<01:46,  2.69it/s]Loading weights:  17%|█▋        | 48/288 [00:00<00:01, 132.12it/s]Loading weights:  28%|██▊       | 80/288 [00:00<00:01, 181.34it/s]Loading weights:  39%|███▉      | 113/288 [00:00<00:00, 210.60it/s]Loading weights:  51%|█████     | 147/288 [00:00<00:00, 241.91it/s]Loading weights:  62%|██████▏   | 179/288 [00:00<00:00, 259.70it/s]Loading weights:  74%|███████▎  | 212/288 [00:01<00:00, 274.87it/s]Loading weights:  86%|████████▌ | 247/288 [00:01<00:00, 291.45it/s]Loading weights:  97%|█████████▋| 279/288 [00:01<00:00, 297.93it/s]Loading weights: 100%|██████████| 288/288 [00:01<00:00, 234.41it/s]
+2026-04-04 23:55:38,390 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-2-2b-it/resolve/main/generation_config.json "HTTP/1.1 200 OK"
+2026-04-04 23:55:38,501 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-2-2b-it/resolve/main/custom_generate/generate.py "HTTP/1.1 404 Not Found"
+2026-04-04 23:55:38,503 - INFO -   Loaded — 2.61B parameters
+2026-04-05 00:17:33,489 - INFO -     Hit@5=0.380, Trie=0.313, lat=617ms
+2026-04-05 00:17:33,489 - INFO -   Seed 43 ...
+2026-04-05 00:17:33,489 - INFO -   Loading google/gemma-2-2b-it ...
+2026-04-05 00:17:33,676 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-2-2b-it/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-05 00:17:33,785 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-2-2b-it/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-05 00:17:33,891 - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-2-2b-it/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-05 00:17:34,020 - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-2-2b-it/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-05 00:17:34,931 - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-2-2b-it "HTTP/1.1 200 OK"
+2026-04-05 00:17:35,056 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-2-2b-it/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-05 00:17:35,164 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-2-2b-it/resolve/main/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/288 [00:00<?, ?it/s]Loading weights:   0%|          | 1/288 [00:00<01:58,  2.42it/s]Loading weights:  12%|█▎        | 36/288 [00:00<00:03, 81.70it/s]Loading weights:  21%|██        | 60/288 [00:00<00:01, 120.45it/s]Loading weights:  32%|███▏      | 91/288 [00:00<00:01, 167.91it/s]Loading weights:  40%|███▉      | 114/288 [00:00<00:01, 168.09it/s]Loading weights:  47%|████▋     | 135/288 [00:01<00:00, 155.01it/s]Loading weights:  58%|█████▊    | 168/288 [00:01<00:00, 186.30it/s]Loading weights:  70%|███████   | 203/288 [00:01<00:00, 220.45it/s]Loading weights:  85%|████████▌ | 245/288 [00:01<00:00, 256.55it/s]Loading weights:  97%|█████████▋| 278/288 [00:01<00:00, 262.86it/s]Loading weights: 100%|██████████| 288/288 [00:01<00:00, 185.89it/s]
+2026-04-05 00:17:36,992 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-2-2b-it/resolve/main/generation_config.json "HTTP/1.1 200 OK"
+2026-04-05 00:17:37,104 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-2-2b-it/resolve/main/custom_generate/generate.py "HTTP/1.1 404 Not Found"
+2026-04-05 00:17:37,106 - INFO -   Loaded — 2.61B parameters
+2026-04-05 00:35:41,690 - INFO -     Hit@5=0.379, Trie=0.328, lat=503ms
+2026-04-05 00:35:41,690 - INFO -   Seed 44 ...
+2026-04-05 00:35:41,691 - INFO -   Loading google/gemma-2-2b-it ...
+2026-04-05 00:35:41,917 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-2-2b-it/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-05 00:35:42,041 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-2-2b-it/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-05 00:35:42,154 - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-2-2b-it/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-05 00:35:42,289 - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-2-2b-it/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-05 00:35:43,220 - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-2-2b-it "HTTP/1.1 200 OK"
+2026-04-05 00:35:43,328 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-2-2b-it/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-05 00:35:43,435 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-2-2b-it/resolve/main/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/288 [00:00<?, ?it/s]Loading weights:   0%|          | 1/288 [00:00<01:37,  2.94it/s]Loading weights:  17%|█▋        | 48/288 [00:00<00:01, 141.13it/s]Loading weights:  28%|██▊       | 80/288 [00:00<00:01, 189.08it/s]Loading weights:  40%|███▉      | 115/288 [00:00<00:00, 235.15it/s]Loading weights:  51%|█████     | 146/288 [00:00<00:00, 253.25it/s]Loading weights:  66%|██████▌   | 190/288 [00:00<00:00, 282.52it/s]Loading weights:  77%|███████▋  | 223/288 [00:00<00:00, 295.01it/s]Loading weights:  89%|████████▉ | 256/288 [00:01<00:00, 299.76it/s]Loading weights: 100%|██████████| 288/288 [00:01<00:00, 246.44it/s]
+2026-04-05 00:35:45,061 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-2-2b-it/resolve/main/generation_config.json "HTTP/1.1 200 OK"
+2026-04-05 00:35:45,185 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-2-2b-it/resolve/main/custom_generate/generate.py "HTTP/1.1 404 Not Found"
+2026-04-05 00:35:45,187 - INFO -   Loaded — 2.61B parameters

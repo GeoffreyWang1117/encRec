@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-02-05T20:59:21.162119",
+  "phases": {
+    "integration": {
+      "n_items": 1000,
+      "n_categories": 5,
+      "user_history": [
+        "pol_0010",
+        "pol_0023",
+        "tec_0005",
+        "spo_0100"
+      ],
+      "n_recommendations": 15
+    }
+  }
+}

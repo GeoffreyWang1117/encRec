@@ -1,0 +1,64 @@
+{
+  "timestamp": "2026-03-28T18:09:05.056456",
+  "n_samples": 2000,
+  "results": {
+    "trie_only": {
+      "hit@5": 0.32875,
+      "latency_ms": 0.1,
+      "llm_calls_pct": 0.0
+    },
+    "llm_only": {
+      "hit@5": 0.38125,
+      "latency_ms": 350,
+      "llm_calls_pct": 100.0
+    },
+    "oracle": {
+      "hit@5": 0.5775,
+      "latency_ms": 200,
+      "llm_calls_pct": 24.875
+    },
+    "trie_router": {
+      "hit@5": 0.32875,
+      "latency_ms": 0.1,
+      "llm_calls_pct": 0.0
+    },
+    "cscr_learned": {
+      "hit@5": 0.335,
+      "latency_ms": 22.4,
+      "llm_calls_pct": 6.4,
+      "router_accuracy": 0.725
+    },
+    "cscr_t0.3": {
+      "hit@5": 0.34125,
+      "latency_ms": 87.1,
+      "llm_calls_pct": 24.9
+    },
+    "cscr_t0.5": {
+      "hit@5": 0.335,
+      "latency_ms": 22.4,
+      "llm_calls_pct": 6.4
+    },
+    "cscr_t0.7": {
+      "hit@5": 0.33125,
+      "latency_ms": 4.9,
+      "llm_calls_pct": 1.4
+    }
+  },
+  "router_info": {
+    "cv_accuracy": 0.7066666666666667,
+    "n_train": 1200,
+    "n_test": 800
+  },
+  "feature_importances": {
+    "avg_title_len": 0.2287,
+    "hist_len": 0.2067,
+    "cat_entropy": 0.1909,
+    "cat_overlap": 0.1526,
+    "n_user_cats": 0.0819,
+    "top_cat_dominance": 0.0682,
+    "ctr_std": 0.0319,
+    "mean_ctr": 0.0284,
+    "ctr_gap": 0.0075,
+    "max_ctr": 0.0033
+  }
+}

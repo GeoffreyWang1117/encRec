@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-02-05T21:59:00.140186",
+  "experiments": [
+    {
+      "name": "amazon_electronics_500k",
+      "n_items": 500000,
+      "std_build_s": 14.450867176055908,
+      "std_nodes": 2525813,
+      "radix_build_s": 9.667996883392334,
+      "radix_nodes": 665171,
+      "avg_edge_len": 4.102621731855417,
+      "radix_mem_mb": 215.284029006958,
+      "node_reduction_pct": 73.6650733842925,
+      "std_mem_mb": 240.88029861450195,
+      "mem_savings_pct": 10.626136614230742,
+      "std_query_ms": 0.004796743392944336,
+      "radix_query_ms": 0.003623175621032715,
+      "query_speedup": 1.3239058479801535,
+      "std_prefix_ms": 0.05793571472167969,
+      "radix_prefix_ms": 0.024928421270651896,
+      "prefix_speedup": 2.3240827845719663,
+      "errors": 0
+    },
+    {
+      "name": "amazon_electronics_1m",
+      "n_items": 1000000,
+      "std_build_s": 27.827884435653687,
+      "std_nodes": 4773012,
+      "radix_build_s": 13.36078405380249,
+      "radix_nodes": 1337105,
+      "avg_edge_len": 3.8759715953496547,
+      "radix_mem_mb": 431.69407081604004,
+      "node_reduction_pct": 71.98613789364032,
+      "std_mem_mb": 455.1898956298828,
+      "mem_savings_pct": 5.161763263951569,
+      "std_query_ms": 0.004810142517089844,
+      "radix_query_ms": 0.004277563095092774,
+      "query_speedup": 1.1245053340319038,
+      "std_prefix_ms": 0.05741442664194915,
+      "radix_prefix_ms": 0.02805661346952794,
+      "prefix_speedup": 2.0463776465504826,
+      "errors": 0
+    }
+  ]
+}

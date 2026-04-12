@@ -1,0 +1,142 @@
+2026-04-04 22:47:42,863 - INFO - Confidence Ablation | samples=2000 | seeds=42,43,44
+2026-04-04 22:47:42,863 - INFO - Device: cuda:0
+2026-04-04 22:47:43,064 - INFO - Loading MIND dataset...
+2026-04-04 22:47:43,064 - INFO - Loading MIND large train from /home/coder-gw/Projects/encRec/data/mind/MINDlarge_train
+2026-04-04 22:47:43,296 - INFO - Loaded 101527 news articles
+2026-04-04 22:47:43,658 - INFO - Loaded 19565 behavior records
+2026-04-04 22:47:43,666 - INFO - Created 2000 recommendation samples
+2026-04-04 22:47:43,713 - INFO - Loaded 101527 news, 2000 samples
+2026-04-04 22:47:46,071 - INFO - Loading local LLM: gpt2
+2026-04-04 22:47:46,281 - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-04 22:47:46,393 - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-04 22:47:46,504 - INFO - HTTP Request: GET https://huggingface.co/api/models/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-04-04 22:47:46,608 - INFO - HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-04 22:47:46,725 - INFO - HTTP Request: GET https://huggingface.co/api/models/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-04-04 22:47:46,844 - INFO - HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-04 22:47:47,102 - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-04 22:47:47,483 - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 12455.00it/s]
+2026-04-04 22:47:47,639 - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/generation_config.json "HTTP/1.1 200 OK"
+2026-04-04 22:47:47,960 - INFO - Local LLM loaded successfully
+2026-04-04 22:47:47,960 - INFO - 
+============================================================
+2026-04-04 22:47:47,960 - INFO - Formulation: ctr_only
+2026-04-04 22:47:47,960 - INFO - ============================================================
+2026-04-04 22:47:47,960 - INFO -   Sweeping τ ∈ [0.02, 0.04, 0.06, 0.08, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4] ...
+`loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+2026-04-04 22:49:32,456 - INFO -     τ=0.02: Hit@5=0.322, exit=87.9%, lat=13.7ms
+2026-04-04 22:51:15,915 - INFO -     τ=0.04: Hit@5=0.322, exit=87.9%, lat=13.6ms
+2026-04-04 22:52:58,881 - INFO -     τ=0.06: Hit@5=0.322, exit=87.9%, lat=13.5ms
+2026-04-04 22:54:40,843 - INFO -     τ=0.08: Hit@5=0.322, exit=87.9%, lat=13.3ms
+2026-04-04 22:56:23,064 - INFO -     τ=0.10: Hit@5=0.322, exit=87.9%, lat=13.4ms
+2026-04-04 22:58:05,299 - INFO -     τ=0.15: Hit@5=0.322, exit=87.9%, lat=13.5ms
+2026-04-04 22:59:47,727 - INFO -     τ=0.20: Hit@5=0.322, exit=87.9%, lat=13.5ms
+2026-04-04 23:01:29,626 - INFO -     τ=0.25: Hit@5=0.322, exit=87.9%, lat=13.4ms
+2026-04-04 23:03:10,800 - INFO -     τ=0.30: Hit@5=0.322, exit=87.9%, lat=13.2ms
+2026-04-04 23:04:51,765 - INFO -     τ=0.35: Hit@5=0.322, exit=87.9%, lat=13.2ms
+2026-04-04 23:06:33,068 - INFO -     τ=0.40: Hit@5=0.322, exit=87.9%, lat=13.3ms
+2026-04-04 23:06:33,068 - INFO -   → Optimal τ*=0.02 → Hit@5=0.322
+2026-04-04 23:08:15,420 - INFO -   Seed 42: Hit@5=0.322, exit=87.9%, lat=13.4ms
+2026-04-04 23:09:57,953 - INFO -   Seed 43: Hit@5=0.340, exit=87.8%, lat=13.6ms
+2026-04-04 23:11:38,821 - INFO -   Seed 44: Hit@5=0.314, exit=87.9%, lat=13.3ms
+2026-04-04 23:11:38,821 - INFO - 
+============================================================
+2026-04-04 23:11:38,821 - INFO - Formulation: category_only
+2026-04-04 23:11:38,821 - INFO - ============================================================
+2026-04-04 23:11:38,821 - INFO -   Sweeping τ ∈ [0.02, 0.04, 0.06, 0.08, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4] ...
+2026-04-04 23:12:53,922 - INFO -     τ=0.02: Hit@5=0.313, exit=100.0%, lat=0.2ms
+2026-04-04 23:14:08,884 - INFO -     τ=0.04: Hit@5=0.313, exit=100.0%, lat=0.2ms
+2026-04-04 23:15:23,905 - INFO -     τ=0.06: Hit@5=0.313, exit=100.0%, lat=0.2ms
+2026-04-04 23:16:39,713 - INFO -     τ=0.08: Hit@5=0.313, exit=100.0%, lat=0.2ms
+2026-04-04 23:17:54,900 - INFO -     τ=0.10: Hit@5=0.313, exit=100.0%, lat=0.2ms
+2026-04-04 23:19:10,109 - INFO -     τ=0.15: Hit@5=0.313, exit=100.0%, lat=0.2ms
+2026-04-04 23:20:27,139 - INFO -     τ=0.20: Hit@5=0.315, exit=99.2%, lat=1.1ms
+2026-04-04 23:21:55,902 - INFO -     τ=0.25: Hit@5=0.316, exit=93.8%, lat=6.9ms
+2026-04-04 23:23:51,814 - INFO -     τ=0.30: Hit@5=0.336, exit=81.1%, lat=20.8ms
+2026-04-04 23:26:25,352 - INFO -     τ=0.35: Hit@5=0.345, exit=64.0%, lat=39.4ms
+2026-04-04 23:29:26,781 - INFO -     τ=0.40: Hit@5=0.357, exit=51.2%, lat=53.2ms
+2026-04-04 23:29:26,781 - INFO -   → Optimal τ*=0.4 → Hit@5=0.357
+2026-04-04 23:32:27,776 - INFO -   Seed 42: Hit@5=0.357, exit=51.2%, lat=53.1ms
+2026-04-04 23:35:30,499 - INFO -   Seed 43: Hit@5=0.370, exit=51.2%, lat=53.8ms
+2026-04-04 23:38:31,408 - INFO -   Seed 44: Hit@5=0.357, exit=51.2%, lat=53.2ms
+2026-04-04 23:38:31,408 - INFO - 
+============================================================
+2026-04-04 23:38:31,408 - INFO - Formulation: product_ours
+2026-04-04 23:38:31,408 - INFO - ============================================================
+2026-04-04 23:38:31,409 - INFO -   Sweeping τ ∈ [0.02, 0.04, 0.06, 0.08, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4] ...
+2026-04-04 23:40:17,079 - INFO -     τ=0.02: Hit@5=0.322, exit=87.9%, lat=14.5ms
+2026-04-04 23:42:06,917 - INFO -     τ=0.04: Hit@5=0.322, exit=87.9%, lat=16.1ms
+2026-04-04 23:43:56,965 - INFO -     τ=0.06: Hit@5=0.322, exit=87.9%, lat=16.1ms
+2026-04-04 23:45:46,579 - INFO -     τ=0.08: Hit@5=0.322, exit=87.9%, lat=16.1ms
+2026-04-04 23:47:35,038 - INFO -     τ=0.10: Hit@5=0.322, exit=87.9%, lat=15.8ms
+2026-04-04 23:49:23,702 - INFO -     τ=0.15: Hit@5=0.323, exit=87.6%, lat=16.1ms
+2026-04-04 23:51:22,779 - INFO -     τ=0.20: Hit@5=0.323, exit=83.5%, lat=21.5ms
+2026-04-04 23:53:46,302 - INFO -     τ=0.25: Hit@5=0.339, exit=73.9%, lat=33.7ms
+2026-04-04 23:56:43,869 - INFO -     τ=0.30: Hit@5=0.345, exit=62.3%, lat=50.8ms
+2026-04-05 00:00:30,642 - INFO -     τ=0.35: Hit@5=0.357, exit=46.9%, lat=75.1ms
+2026-04-05 00:04:47,732 - INFO -     τ=0.40: Hit@5=0.359, exit=36.2%, lat=89.8ms
+2026-04-05 00:04:47,732 - INFO -   → Optimal τ*=0.4 → Hit@5=0.359
+2026-04-05 00:09:05,188 - INFO -   Seed 42: Hit@5=0.359, exit=36.2%, lat=89.6ms
+2026-04-05 00:13:22,835 - INFO -   Seed 43: Hit@5=0.376, exit=36.1%, lat=90.0ms
+2026-04-05 00:17:41,259 - INFO -   Seed 44: Hit@5=0.360, exit=35.7%, lat=90.2ms
+2026-04-05 00:17:41,259 - INFO - 
+============================================================
+2026-04-05 00:17:41,259 - INFO - Formulation: additive
+2026-04-05 00:17:41,259 - INFO - ============================================================
+2026-04-05 00:17:41,259 - INFO -   Sweeping τ ∈ [0.02, 0.04, 0.06, 0.08, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4] ...
+2026-04-05 00:18:58,558 - INFO -     τ=0.02: Hit@5=0.313, exit=100.0%, lat=0.2ms
+2026-04-05 00:20:15,153 - INFO -     τ=0.04: Hit@5=0.313, exit=100.0%, lat=0.2ms
+2026-04-05 00:21:32,407 - INFO -     τ=0.06: Hit@5=0.313, exit=100.0%, lat=0.2ms
+2026-04-05 00:22:50,310 - INFO -     τ=0.08: Hit@5=0.312, exit=99.9%, lat=0.4ms
+2026-04-05 00:24:07,822 - INFO -     τ=0.10: Hit@5=0.312, exit=99.9%, lat=0.4ms
+2026-04-05 00:25:31,413 - INFO -     τ=0.15: Hit@5=0.316, exit=97.8%, lat=3.4ms
+2026-04-05 00:27:04,829 - INFO -     τ=0.20: Hit@5=0.320, exit=94.2%, lat=8.4ms
+2026-04-05 00:28:45,637 - INFO -     τ=0.25: Hit@5=0.319, exit=91.5%, lat=12.1ms
+2026-04-05 00:30:31,706 - INFO -     τ=0.30: Hit@5=0.322, exit=89.5%, lat=15.0ms
+2026-04-05 00:32:19,306 - INFO -     τ=0.35: Hit@5=0.323, exit=88.8%, lat=15.8ms
+2026-04-05 00:34:09,035 - INFO -     τ=0.40: Hit@5=0.322, exit=88.3%, lat=16.7ms
+2026-04-05 00:34:09,035 - INFO -   → Optimal τ*=0.35 → Hit@5=0.323
+2026-04-05 00:35:56,947 - INFO -   Seed 42: Hit@5=0.323, exit=88.8%, lat=15.7ms
+2026-04-05 00:37:47,628 - INFO -   Seed 43: Hit@5=0.342, exit=89.0%, lat=15.9ms
+2026-04-05 00:39:37,669 - INFO -   Seed 44: Hit@5=0.316, exit=89.1%, lat=15.9ms
+2026-04-05 00:39:37,669 - INFO - 
+============================================================
+2026-04-05 00:39:37,669 - INFO - Formulation: entropy_weighted
+2026-04-05 00:39:37,670 - INFO - ============================================================
+2026-04-05 00:39:37,670 - INFO -   Sweeping τ ∈ [0.02, 0.04, 0.06, 0.08, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4] ...
+2026-04-05 00:41:30,542 - INFO -     τ=0.02: Hit@5=0.322, exit=87.9%, lat=17.6ms
+2026-04-05 00:43:23,735 - INFO -     τ=0.04: Hit@5=0.322, exit=87.9%, lat=17.6ms
+2026-04-05 00:45:15,996 - INFO -     τ=0.06: Hit@5=0.322, exit=87.9%, lat=17.5ms
+2026-04-05 00:47:34,212 - INFO -     τ=0.08: Hit@5=0.322, exit=87.9%, lat=29.5ms
+2026-04-05 00:50:04,888 - INFO -     τ=0.10: Hit@5=0.322, exit=87.9%, lat=35.1ms
+2026-04-05 00:52:33,488 - INFO -     τ=0.15: Hit@5=0.322, exit=87.9%, lat=35.0ms
+2026-04-05 00:55:02,870 - INFO -     τ=0.20: Hit@5=0.323, exit=87.8%, lat=35.4ms
+2026-04-05 00:57:39,930 - INFO -     τ=0.25: Hit@5=0.326, exit=86.2%, lat=39.6ms
+2026-04-05 01:00:51,975 - INFO -     τ=0.30: Hit@5=0.329, exit=80.0%, lat=57.5ms
+2026-04-05 01:04:55,212 - INFO -     τ=0.35: Hit@5=0.335, exit=71.3%, lat=82.9ms
+2026-04-05 01:10:31,034 - INFO -     τ=0.40: Hit@5=0.354, exit=55.8%, lat=128.7ms
+2026-04-05 01:10:31,035 - INFO -   → Optimal τ*=0.4 → Hit@5=0.354
+2026-04-05 01:16:03,856 - INFO -   Seed 42: Hit@5=0.354, exit=55.8%, lat=127.1ms
+2026-04-05 01:21:37,934 - INFO -   Seed 43: Hit@5=0.369, exit=55.5%, lat=127.9ms
+2026-04-05 01:27:08,828 - INFO -   Seed 44: Hit@5=0.353, exit=56.1%, lat=126.3ms
+2026-04-05 01:27:08,859 - INFO - 
+================================================================================
+2026-04-05 01:27:08,859 - INFO - CONFIDENCE FORMULATION ABLATION SUMMARY
+2026-04-05 01:27:08,859 - INFO - ================================================================================
+2026-04-05 01:27:08,859 - INFO - Formulation               τ*        Hit@5    Exit Rate     Lat (ms)   Exit Hit@5
+2026-04-05 01:27:08,859 - INFO - --------------------------------------------------------------------------------
+2026-04-05 01:27:08,859 - INFO - CTR-only                0.02  0.325±0.011     87.9%±0.1%       13.4ms      0.316
+2026-04-05 01:27:08,859 - INFO - Category-only           0.40  0.362±0.006     51.2%±0.0%       53.4ms      0.334
+2026-04-05 01:27:08,859 - INFO - Product (Ours) ★        0.40  0.365±0.008     36.0%±0.2%       89.9ms      0.329
+2026-04-05 01:27:08,859 - INFO - Additive                0.35  0.327±0.011     89.0%±0.1%       15.8ms      0.318
+2026-04-05 01:27:08,859 - INFO - Entropy-weighted        0.40  0.359±0.007     55.8%±0.2%      127.1ms      0.325
+2026-04-05 01:27:08,859 - INFO - 
+LaTeX table row format (for paper):
+2026-04-05 01:27:08,859 - INFO - \midrule
+2026-04-05 01:27:08,859 - INFO - CTR-only & 0.02 & 0.325$\pm$0.011 & 87.9\% & 13.4ms & 0.316 \\
+2026-04-05 01:27:08,859 - INFO - Category-only & 0.40 & 0.362$\pm$0.006 & 51.2\% & 53.4ms & 0.334 \\
+2026-04-05 01:27:08,859 - INFO - \textbf{Product (Ours)} & 0.40 & \textbf{0.365$\pm$0.008} & 36.0\% & 89.9ms & 0.329 \\
+2026-04-05 01:27:08,859 - INFO - Additive & 0.35 & 0.327$\pm$0.011 & 89.0\% & 15.8ms & 0.318 \\
+2026-04-05 01:27:08,859 - INFO - Entropy-weighted & 0.40 & 0.359$\pm$0.007 & 55.8\% & 127.1ms & 0.325 \\
+2026-04-05 01:27:08,860 - INFO - 
+Results saved to: results/kdd_response_confidence_ablation/confidence_ablation_20260405_012708.json

@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-02-05T20:59:11.340060",
+  "phases": {
+    "large": {
+      "phase": "large",
+      "timestamp": "2026-02-05T20:59:11.340073",
+      "experiments": [
+        {
+          "name": "mind_large",
+          "n_items": 101527,
+          "std_build_time_s": 0.35538339614868164,
+          "radix_build_time_s": 0.6895427703857422,
+          "std_mem_mb_estimate": 59.50193405151367,
+          "radix_mem_mb": 35.355852127075195,
+          "memory_savings_pct": 40.58033122676997,
+          "radix_nodes": 104250,
+          "avg_edge_length": 1.11557793764988,
+          "std_query_ms": 0.0011072397232055665,
+          "radix_query_ms": 0.0019002676010131836,
+          "std_prefix_ms": 0.03181563483344184,
+          "radix_prefix_ms": 0.0257518556382921,
+          "errors": 0
+        }
+      ]
+    }
+  }
+}

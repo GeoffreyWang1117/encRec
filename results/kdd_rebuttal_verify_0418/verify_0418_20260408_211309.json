@@ -1,0 +1,16 @@
+{
+  "samples": 5000,
+  "seeds": [
+    42,
+    123,
+    456
+  ],
+  "per_seed": {
+    "42": 0.4,
+    "123": 0.403,
+    "456": 0.4024
+  },
+  "mean": 0.4018,
+  "std": 0.0012961481396815664,
+  "note": "Reproduces original kdd_triellm_11_model_scale GPT-2 LLM-only pipeline (\"User interests: ... Recommend: ...\" prompt) at 5K\u00d73 to verify whether Feb 7 single-seed 0.418 was signal or noise."
+}

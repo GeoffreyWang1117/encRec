@@ -1,0 +1,123 @@
+{
+  "timestamp": "2026-03-28T17:50:33.196159",
+  "sri_analysis": {
+    "datasets": [
+      {
+        "dataset": "mind",
+        "n_items": 101527,
+        "avg_title_length": 10.66,
+        "vocab_diversity": 0.1976,
+        "category_entropy": 2.8734,
+        "n_categories": 18,
+        "description_coverage": 0.9449,
+        "SRI": 0.5626,
+        "llm_delta_hit5": 0.211,
+        "llm_benefit_pct": 100.0
+      },
+      {
+        "dataset": "movielens",
+        "n_items": 3883,
+        "avg_title_length": 4.04,
+        "vocab_diversity": 0.3352,
+        "category_entropy": 2.9722,
+        "n_categories": 18,
+        "description_coverage": 0.4909,
+        "SRI": 0.4056,
+        "llm_delta_hit5": -0.016,
+        "llm_benefit_pct": -100.0
+      },
+      {
+        "dataset": "amazon_electronics",
+        "n_items": 100000,
+        "avg_title_length": 13.9,
+        "vocab_diversity": 0.2002,
+        "category_entropy": 3.0411,
+        "n_categories": 36,
+        "description_coverage": 0.0,
+        "SRI": 0.3759,
+        "llm_delta_hit5": -0.318,
+        "llm_benefit_pct": -100.0
+      },
+      {
+        "dataset": "amazon_movies",
+        "n_items": 100000,
+        "avg_title_length": 5.0,
+        "vocab_diversity": 0.2824,
+        "category_entropy": 1.0401,
+        "n_categories": 26,
+        "description_coverage": 0.0,
+        "SRI": 0.1851,
+        "llm_delta_hit5": -0.074,
+        "llm_benefit_pct": -100.0
+      },
+      {
+        "dataset": "criteo",
+        "n_items": 10000,
+        "avg_title_length": 1.0,
+        "vocab_diversity": 1.0,
+        "category_entropy": -0.0,
+        "n_categories": 1,
+        "description_coverage": 0.0,
+        "SRI": 0.2625,
+        "llm_delta_hit5": -0.218,
+        "llm_benefit_pct": -100.0
+      }
+    ],
+    "regression": {
+      "pearson_r": 0.6015,
+      "slope": 0.8444,
+      "intercept": -0.3856,
+      "r_squared": 0.3618
+    }
+  },
+  "carbon_analysis": {
+    "Trie-only": {
+      "latency_ms": 0.1,
+      "energy_per_req_wh": 8e-06,
+      "carbon_per_req_mgCO2": 0.0037,
+      "carbon_per_1k_req_gCO2": 0.0037,
+      "annual_carbon_kg": 0.0,
+      "carbon_savings_vs_llm_pct": 100.0
+    },
+    "Trie+LLM (GPT-2)": {
+      "latency_ms": 212,
+      "energy_per_req_wh": 0.016489,
+      "carbon_per_req_mgCO2": 7.8322,
+      "carbon_per_1k_req_gCO2": 7.8322,
+      "annual_carbon_kg": 7.83,
+      "carbon_savings_vs_llm_pct": 39.4
+    },
+    "LLM-only (GPT-2)": {
+      "latency_ms": 350,
+      "energy_per_req_wh": 0.027222,
+      "carbon_per_req_mgCO2": 12.9306,
+      "carbon_per_1k_req_gCO2": 12.9306,
+      "annual_carbon_kg": 12.93,
+      "carbon_savings_vs_llm_pct": 0.0
+    },
+    "FrugalGPT cascade": {
+      "latency_ms": 394,
+      "energy_per_req_wh": 0.030644,
+      "carbon_per_req_mgCO2": 14.5561,
+      "carbon_per_1k_req_gCO2": 14.5561,
+      "annual_carbon_kg": 14.56,
+      "carbon_savings_vs_llm_pct": -12.6
+    },
+    "Llama3.1 8B": {
+      "latency_ms": 1405,
+      "energy_per_req_wh": 0.109278,
+      "carbon_per_req_mgCO2": 51.9069,
+      "carbon_per_1k_req_gCO2": 51.9069,
+      "annual_carbon_kg": 51.91,
+      "carbon_savings_vs_llm_pct": -301.4
+    },
+    "Trie+LLM (aligned)": {
+      "latency_ms": 166,
+      "energy_per_req_wh": 0.012911,
+      "carbon_per_req_mgCO2": 6.1328,
+      "carbon_per_1k_req_gCO2": 6.1328,
+      "annual_carbon_kg": 6.13,
+      "carbon_savings_vs_llm_pct": 52.6
+    }
+  }
+}

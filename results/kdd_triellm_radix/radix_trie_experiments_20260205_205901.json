@@ -1,0 +1,84 @@
+{
+  "timestamp": "2026-02-05T20:58:53.791279",
+  "phases": {
+    "small": {
+      "phase": "small",
+      "timestamp": "2026-02-05T20:58:53.791291",
+      "experiments": [
+        {
+          "name": "basic_correctness",
+          "items": 11,
+          "errors": 0,
+          "error_details": [],
+          "passed": true
+        },
+        {
+          "name": "scaling_1000",
+          "n_items": 1000,
+          "std_build_time_s": 0.065185546875,
+          "radix_build_time_s": 0.0027856826782226562,
+          "radix_nodes": 1394,
+          "node_reduction_pct": 88.38333333333334,
+          "avg_edge_length": 7.067431850789096,
+          "std_query_ms": 0.0010800361633300781,
+          "radix_query_ms": 0.0006480216979980469,
+          "std_prefix_ms": 0.004441738128662109,
+          "radix_prefix_ms": 0.0012660026550292969,
+          "memory_mb": 0.45449066162109375
+        },
+        {
+          "name": "scaling_10000",
+          "n_items": 10000,
+          "std_build_time_s": 0.207322359085083,
+          "radix_build_time_s": 0.03302168846130371,
+          "radix_nodes": 14505,
+          "node_reduction_pct": 87.91250000000001,
+          "avg_edge_length": 6.6155808341951055,
+          "std_query_ms": 0.0019860267639160156,
+          "radix_query_ms": 0.0010797977447509766,
+          "std_prefix_ms": 0.005040168762207031,
+          "radix_prefix_ms": 0.0016546249389648438,
+          "memory_mb": 4.677961349487305
+        },
+        {
+          "name": "scaling_100000",
+          "n_items": 100000,
+          "std_build_time_s": 4.244967460632324,
+          "radix_build_time_s": 0.34189295768737793,
+          "radix_nodes": 140612,
+          "node_reduction_pct": 88.28233333333333,
+          "avg_edge_length": 6.518639945381618,
+          "std_query_ms": 0.0031540393829345703,
+          "radix_query_ms": 0.002435922622680664,
+          "std_prefix_ms": 0.008158683776855469,
+          "radix_prefix_ms": 0.0035190582275390625,
+          "memory_mb": 45.614118576049805
+        },
+        {
+          "name": "prefix_sim_0.2",
+          "prefix_similarity": 0.2,
+          "n_items": 50000,
+          "total_nodes": 69267,
+          "avg_edge_length": 9.287279656979514,
+          "compression_ratio": 1.286604
+        },
+        {
+          "name": "prefix_sim_0.5",
+          "prefix_similarity": 0.5,
+          "n_items": 50000,
+          "total_nodes": 71081,
+          "avg_edge_length": 8.79316554353484,
+          "compression_ratio": 1.250054
+        },
+        {
+          "name": "prefix_sim_0.8",
+          "prefix_similarity": 0.8,
+          "n_items": 50000,
+          "total_nodes": 64664,
+          "avg_edge_length": 8.927223803043425,
+          "compression_ratio": 1.15454
+        }
+      ]
+    }
+  }
+}

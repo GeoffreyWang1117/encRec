@@ -1,0 +1,24 @@
+{
+  "config": {
+    "num_users": 6,
+    "num_items": 5000
+  },
+  "latency": {
+    "trie_only": {
+      "mean": 0.37546952565511066,
+      "std": 0.08018257223086825
+    },
+    "trie_augmented": {
+      "mean": 0.6717443466186523,
+      "std": 0.06950528611109008
+    }
+  },
+  "compression": {
+    "mean_ratio": 0.7777777777777778,
+    "mean_tokens_saved": 13.333333333333334
+  },
+  "optimization": {
+    "early_exit_rate": 1.0,
+    "cache_hit_rate": 0.0
+  }
+}

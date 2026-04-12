@@ -1,0 +1,111 @@
+{
+  "timestamp": "20260405_030446",
+  "args": {
+    "samples": 1000,
+    "runs": 3,
+    "pool_size": 20,
+    "device": "cuda:0",
+    "seeds": "42,43,44",
+    "models": "Gemma-2-2B,Qwen3-1.7B,Qwen2.5-3B",
+    "scoring_only": "perplexity",
+    "output_dir": "results/kdd_response_model_scale_2025"
+  },
+  "results": {
+    "Gemma-2-2B (2024)": {
+      "perplexity": {
+        "hit@5_mean": 0.37266666666666665,
+        "hit@5_std": 0.004921607686744471,
+        "latency_ms_mean": 1101.0645409764256,
+        "year": 2024,
+        "params": "2.0B",
+        "seed_results": [
+          {
+            "hit@5": 0.372,
+            "trie_hit@5": 0.299,
+            "latency_ms_mean": 591.352836466278,
+            "latency_ms_p50": 549.4864110369235,
+            "n_samples": 1000
+          },
+          {
+            "hit@5": 0.367,
+            "trie_hit@5": 0.301,
+            "latency_ms_mean": 1365.5085714884335,
+            "latency_ms_p50": 1366.831008985173,
+            "n_samples": 1000
+          },
+          {
+            "hit@5": 0.379,
+            "trie_hit@5": 0.309,
+            "latency_ms_mean": 1346.3322149745654,
+            "latency_ms_p50": 1396.8736254610121,
+            "n_samples": 1000
+          }
+        ]
+      }
+    },
+    "Qwen3-1.7B (2025)": {
+      "perplexity": {
+        "hit@5_mean": 0.359,
+        "hit@5_std": 0.0014142135623730965,
+        "latency_ms_mean": 718.0978306252509,
+        "year": 2025,
+        "params": "1.7B",
+        "seed_results": [
+          {
+            "hit@5": 0.361,
+            "trie_hit@5": 0.299,
+            "latency_ms_mean": 717.1433464406291,
+            "latency_ms_p50": 708.1744539900683,
+            "n_samples": 1000
+          },
+          {
+            "hit@5": 0.358,
+            "trie_hit@5": 0.301,
+            "latency_ms_mean": 721.7676396648167,
+            "latency_ms_p50": 714.8589110001922,
+            "n_samples": 1000
+          },
+          {
+            "hit@5": 0.358,
+            "trie_hit@5": 0.309,
+            "latency_ms_mean": 715.382505770307,
+            "latency_ms_p50": 707.6401014928706,
+            "n_samples": 1000
+          }
+        ]
+      }
+    },
+    "Qwen2.5-3B (2024)": {
+      "perplexity": {
+        "hit@5_mean": 0.3456666666666666,
+        "hit@5_std": 0.0012472191289246482,
+        "latency_ms_mean": 1013.8289769828552,
+        "year": 2024,
+        "params": "3.0B",
+        "seed_results": [
+          {
+            "hit@5": 0.346,
+            "trie_hit@5": 0.299,
+            "latency_ms_mean": 1015.3818521447247,
+            "latency_ms_p50": 996.118223585654,
+            "n_samples": 1000
+          },
+          {
+            "hit@5": 0.344,
+            "trie_hit@5": 0.301,
+            "latency_ms_mean": 1014.0147089228267,
+            "latency_ms_p50": 993.7713039689697,
+            "n_samples": 1000
+          },
+          {
+            "hit@5": 0.347,
+            "trie_hit@5": 0.309,
+            "latency_ms_mean": 1012.0903698810143,
+            "latency_ms_p50": 991.5082085644826,
+            "n_samples": 1000
+          }
+        ]
+      }
+    }
+  }
+}

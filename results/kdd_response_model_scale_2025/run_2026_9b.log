@@ -1,0 +1,85 @@
+2026-04-05 09:49:33,264 - INFO - Device: cuda:0 | device_map: auto
+2026-04-05 09:49:33,478 - INFO - Loading MIND 1000 samples ...
+2026-04-05 09:49:33,478 - INFO - Loading MIND large train from /home/coder-gw/Projects/encRec/data/mind/MINDlarge_train
+2026-04-05 09:49:33,728 - INFO - Loaded 101527 news articles
+2026-04-05 09:49:33,991 - INFO - Loaded 9788 behavior records
+2026-04-05 09:49:33,998 - INFO - Created 1000 recommendation samples
+2026-04-05 09:49:34,037 - INFO - Models to evaluate: ['Qwen3.5-9B (2026)']
+2026-04-05 09:49:34,038 - INFO - 
+============================================================
+Qwen3.5-9B (2026)
+============================================================
+2026-04-05 09:49:34,038 - INFO -   Seed 42 ...
+2026-04-05 09:49:36,589 - INFO -   Loading Qwen/Qwen3.5-9B ...
+2026-04-05 09:49:36,926 - INFO - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-9B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-05 09:49:36,954 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-9B/c202236235762e1c871ad0ccb60c8ee5ba337b9a/config.json "HTTP/1.1 200 OK"
+2026-04-05 09:49:37,111 - INFO - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-9B/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-05 09:49:37,162 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-9B/c202236235762e1c871ad0ccb60c8ee5ba337b9a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-05 09:49:37,330 - INFO - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-9B/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-05 09:49:37,354 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-9B/c202236235762e1c871ad0ccb60c8ee5ba337b9a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-05 09:49:37,456 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3.5-9B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-05 09:49:37,587 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3.5-9B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-05 09:49:38,768 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3.5-9B "HTTP/1.1 200 OK"
+2026-04-05 09:49:38,905 - INFO - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-9B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-05 09:49:38,939 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-9B/c202236235762e1c871ad0ccb60c8ee5ba337b9a/config.json "HTTP/1.1 200 OK"
+2026-04-05 09:49:39,271 - INFO - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-9B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-05 09:49:39,294 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-9B/c202236235762e1c871ad0ccb60c8ee5ba337b9a/config.json "HTTP/1.1 200 OK"
+2026-04-05 09:49:39,415 - INFO - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-9B/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-04-05 09:49:39,524 - INFO - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-9B/resolve/main/model.safetensors.index.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-05 09:49:39,659 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-9B/c202236235762e1c871ad0ccb60c8ee5ba337b9a/model.safetensors.index.json "HTTP/1.1 200 OK"
+2026-04-05 09:49:39,770 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3.5-9B/revision/main "HTTP/1.1 200 OK"
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 20585.54it/s]
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/427 [00:00<?, ?it/s]Loading weights:   0%|          | 2/427 [00:01<06:22,  1.11it/s]Loading weights:   3%|▎         | 11/427 [00:01<00:55,  7.49it/s]Loading weights:   4%|▎         | 16/427 [00:02<00:41,  9.92it/s]Loading weights:   6%|▌         | 26/427 [00:02<00:21, 18.99it/s]Loading weights:   7%|▋         | 32/427 [00:02<00:20, 19.22it/s]Loading weights:   9%|▉         | 40/427 [00:02<00:14, 25.92it/s]Loading weights:  11%|█         | 45/427 [00:03<00:16, 23.39it/s]Loading weights:  11%|█▏        | 49/427 [00:03<00:18, 20.92it/s]Loading weights:  13%|█▎        | 55/427 [00:03<00:14, 26.39it/s]Loading weights:  14%|█▍        | 61/427 [00:03<00:11, 32.06it/s]Loading weights:  15%|█▌        | 66/427 [00:03<00:10, 34.63it/s]Loading weights:  17%|█▋        | 71/427 [00:03<00:11, 31.65it/s]Loading weights:  19%|█▊        | 79/427 [00:03<00:09, 38.64it/s]Loading weights:  20%|█▉        | 84/427 [00:04<00:11, 30.57it/s]Loading weights:  22%|██▏       | 93/427 [00:04<00:09, 33.91it/s]Loading weights:  23%|██▎       | 97/427 [00:04<00:11, 29.37it/s]Loading weights:  24%|██▎       | 101/427 [00:04<00:13, 23.92it/s]Loading weights:  27%|██▋       | 115/427 [00:05<00:07, 39.60it/s]Loading weights:  28%|██▊       | 120/427 [00:05<00:09, 32.81it/s]Loading weights:  30%|███       | 129/427 [00:05<00:07, 39.95it/s]Loading weights:  31%|███▏      | 134/427 [00:05<00:08, 33.12it/s]Loading weights:  32%|███▏      | 138/427 [00:05<00:08, 33.48it/s]Loading weights:  35%|███▍      | 148/427 [00:05<00:06, 42.05it/s]Loading weights:  36%|███▌      | 153/427 [00:06<00:08, 32.83it/s]Loading weights:  37%|███▋      | 158/427 [00:06<00:07, 34.35it/s]Loading weights:  39%|███▉      | 168/427 [00:06<00:06, 41.77it/s]Loading weights:  41%|████      | 173/427 [00:06<00:08, 30.94it/s]Loading weights:  43%|████▎     | 185/427 [00:06<00:05, 43.60it/s]Loading weights:  45%|████▍     | 191/427 [00:07<00:06, 35.49it/s]Loading weights:  46%|████▌     | 197/427 [00:07<00:05, 39.40it/s]Loading weights:  47%|████▋     | 202/427 [00:07<00:07, 29.04it/s]Loading weights:  48%|████▊     | 206/427 [00:07<00:08, 26.96it/s]Loading weights:  49%|████▉     | 210/427 [00:07<00:07, 29.01it/s]Loading weights:  51%|█████     | 218/427 [00:08<00:05, 38.64it/s]Loading weights:  52%|█████▏    | 224/427 [00:08<00:04, 40.90it/s]Loading weights:  54%|█████▎    | 229/427 [00:08<00:06, 30.91it/s]Loading weights:  56%|█████▌    | 238/427 [00:08<00:05, 34.76it/s]Loading weights:  57%|█████▋    | 243/427 [00:08<00:05, 32.59it/s]Loading weights:  59%|█████▉    | 251/427 [00:08<00:04, 39.10it/s]Loading weights:  60%|█████▉    | 256/427 [00:09<00:05, 30.87it/s]Loading weights:  61%|██████    | 260/427 [00:09<00:06, 25.36it/s]Loading weights:  63%|██████▎   | 268/427 [00:09<00:04, 34.14it/s]Loading weights:  65%|██████▍   | 276/427 [00:09<00:03, 41.20it/s]Loading weights:  66%|██████▌   | 282/427 [00:09<00:04, 31.82it/s]Loading weights:  68%|██████▊   | 289/427 [00:10<00:03, 38.28it/s]Loading weights:  69%|██████▉   | 294/427 [00:10<00:04, 28.54it/s]Loading weights:  71%|███████   | 303/427 [00:10<00:03, 38.13it/s]Loading weights:  72%|███████▏  | 309/427 [00:10<00:03, 29.70it/s]Loading weights:  74%|███████▎  | 314/427 [00:11<00:04, 25.36it/s]Loading weights:  75%|███████▍  | 320/427 [00:11<00:03, 30.45it/s]Loading weights:  77%|███████▋  | 330/427 [00:11<00:02, 41.02it/s]Loading weights:  79%|███████▊  | 336/427 [00:11<00:02, 32.72it/s]Loading weights:  81%|████████  | 344/427 [00:11<00:02, 38.70it/s]Loading weights:  82%|████████▏ | 349/427 [00:12<00:02, 30.48it/s]Loading weights:  84%|████████▍ | 358/427 [00:12<00:01, 34.64it/s]Loading weights:  85%|████████▌ | 363/427 [00:12<00:01, 32.26it/s]Loading weights:  86%|████████▌ | 367/427 [00:12<00:02, 25.67it/s]Loading weights:  87%|████████▋ | 373/427 [00:12<00:01, 30.73it/s]Loading weights:  90%|████████▉ | 383/427 [00:12<00:01, 41.85it/s]Loading weights:  91%|█████████ | 389/427 [00:13<00:01, 32.56it/s]Loading weights:  92%|█████████▏| 394/427 [00:13<00:00, 33.97it/s]Loading weights:  93%|█████████▎| 399/427 [00:13<00:00, 31.75it/s]Loading weights:  96%|█████████▌| 408/427 [00:13<00:00, 38.32it/s]Loading weights:  97%|█████████▋| 413/427 [00:13<00:00, 31.26it/s]Loading weights: 100%|██████████| 427/427 [00:14<00:00, 30.35it/s]
+[1mQwen3_5ForCausalLM LOAD REPORT[0m from: Qwen/Qwen3.5-9B
+Key                                                | Status     |  | 
+---------------------------------------------------+------------+--+-
+model.visual.blocks.{0...26}.norm1.weight          | UNEXPECTED |  | 
+model.visual.blocks.{0...26}.mlp.linear_fc2.weight | UNEXPECTED |  | 
+model.visual.blocks.{0...26}.mlp.linear_fc1.bias   | UNEXPECTED |  | 
+model.visual.blocks.{0...26}.norm2.bias            | UNEXPECTED |  | 
+model.visual.blocks.{0...26}.mlp.linear_fc2.bias   | UNEXPECTED |  | 
+model.visual.blocks.{0...26}.attn.proj.weight      | UNEXPECTED |  | 
+mtp.layers.0.self_attn.k_norm.weight               | UNEXPECTED |  | 
+model.visual.blocks.{0...26}.attn.qkv.bias         | UNEXPECTED |  | 
+model.visual.blocks.{0...26}.attn.qkv.weight       | UNEXPECTED |  | 
+model.visual.blocks.{0...26}.norm2.weight          | UNEXPECTED |  | 
+model.visual.blocks.{0...26}.attn.proj.bias        | UNEXPECTED |  | 
+model.visual.blocks.{0...26}.mlp.linear_fc1.weight | UNEXPECTED |  | 
+model.visual.blocks.{0...26}.norm1.bias            | UNEXPECTED |  | 
+mtp.layers.0.input_layernorm.weight                | UNEXPECTED |  | 
+model.visual.merger.norm.weight                    | UNEXPECTED |  | 
+mtp.layers.0.self_attn.k_proj.weight               | UNEXPECTED |  | 
+mtp.layers.0.post_attention_layernorm.weight       | UNEXPECTED |  | 
+mtp.norm.weight                                    | UNEXPECTED |  | 
+mtp.layers.0.self_attn.q_proj.weight               | UNEXPECTED |  | 
+mtp.layers.0.mlp.up_proj.weight                    | UNEXPECTED |  | 
+mtp.layers.0.self_attn.q_norm.weight               | UNEXPECTED |  | 
+mtp.layers.0.self_attn.o_proj.weight               | UNEXPECTED |  | 
+model.visual.merger.linear_fc2.bias                | UNEXPECTED |  | 
+model.visual.merger.linear_fc1.bias                | UNEXPECTED |  | 
+model.visual.patch_embed.proj.bias                 | UNEXPECTED |  | 
+model.visual.merger.linear_fc1.weight              | UNEXPECTED |  | 
+mtp.layers.0.mlp.gate_proj.weight                  | UNEXPECTED |  | 
+mtp.fc.weight                                      | UNEXPECTED |  | 
+mtp.layers.0.self_attn.v_proj.weight               | UNEXPECTED |  | 
+mtp.pre_fc_norm_hidden.weight                      | UNEXPECTED |  | 
+mtp.pre_fc_norm_embedding.weight                   | UNEXPECTED |  | 
+model.visual.merger.norm.bias                      | UNEXPECTED |  | 
+mtp.layers.0.mlp.down_proj.weight                  | UNEXPECTED |  | 
+model.visual.patch_embed.proj.weight               | UNEXPECTED |  | 
+model.visual.pos_embed.weight                      | UNEXPECTED |  | 
+model.visual.merger.linear_fc2.weight              | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+2026-04-05 09:49:54,573 - WARNING -   OOM on Qwen3.5-9B (2026) — skipping
+2026-04-05 09:49:54,720 - INFO - 
+Saved: results/kdd_response_model_scale_2025/model_scale_2026_20260405_094954.json
+
+===========================================================================
+2026 MODEL SCALE — Hit@5 Comparison (MIND Large, perplexity scoring)
+===========================================================================
+Model                       Year  Params          Hit@5    Lat(ms)
+---------------------------------------------------------------------------
+===========================================================================

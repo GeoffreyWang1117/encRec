@@ -1,0 +1,50 @@
+Loading: results/kdd_response_confidence_ablation/confidence_ablation_20260405_012708.json
+
+=====================================================================================
+TABLE: Confidence Formulation Ablation (MIND Large, 2000 samples × 3 seeds)
+=====================================================================================
+Formulation               τ*          Hit@5     Exit Rate   Lat (ms)   Exit Hit@5
+-------------------------------------------------------------------------------------
+CTR-only                 0.02    0.325±0.011    87.9%±0.1%       13.4ms        0.316
+Category-only             0.4    0.362±0.006    51.2%±0.0%       53.4ms        0.334
+Product (Ours) ★          0.4    0.365±0.008    36.0%±0.2%       89.9ms        0.329
+Additive                 0.35    0.327±0.011    89.0%±0.1%       15.8ms        0.318
+Entropy-weighted          0.4    0.359±0.007    55.8%±0.2%      127.1ms        0.325
+=====================================================================================
+
+=====================================================================================
+KEY INSIGHTS FOR REVIEWER KQWU Q4:
+=====================================================================================
+
+[CTR-only]
+  CTR gap is bimodal (≈0.99 for 88% of samples, ≈0 for 12%) because history items get CTR=1.0, unseen items get CTR=0.01. Result: constant exit_rate=87.9% regardless of τ, overconfident early exit → Hit@5 WORSE than LLM-only. Demonstrates that CTR signal alone is insufficient for calibrated routing.
+
+[Category-only]
+  pref_strength provides graded discrimination (distribution in [0,1]), but ignores candidate separability. Can exit confidently even when all candidates have same CTR — routes to Trie when LLM would score them better.
+
+[Product (Ours)]
+  Both conditions must hold simultaneously (AND logic via product): user has clear category preference AND candidates are CTR-separable. Creates calibrated confidence with graded discrimination. Our paper formula.
+
+[Additive]
+  Allows high category signal to compensate for low CTR gap (OR-like). Higher exit rate than product for same τ — exits when category OR CTR is strong, not both, leading to more incorrect routing decisions.
+
+[Entropy-weighted]
+  Entropy factor (1 - H/Hmax) is conceptually similar to pref_strength but computed differently. Slightly noisier than pref_strength because entropy treats all minority categories symmetrically while pref_strength focuses on the dominant category.
+
+% LaTeX table for paper (confidence formulation ablation)
+\begin{table}[t]
+\centering\small
+\caption{Confidence formulation ablation on \mind{} Large (2000 samples, 3 runs). Our product formulation achieves the best Hit@5 with calibrated exit rates.}
+\label{tab:conf_ablation}
+\begin{tabular}{lcrrrr}
+\toprule
+Formulation & $\tau^*$ & Hit@5 & Exit Rate & Latency & Exit Hit@5 \\
+\midrule
+CTR-only & 0.02 & 0.325$\pm$0.011 & 87.9\% & 13.4ms & 0.316 \\
+Category-only & 0.4 & 0.362$\pm$0.006 & 51.2\% & 53.4ms & 0.334 \\
+\textbf{Product (Ours)} & 0.4 & \textbf{0.365$\pm$0.008} & 36.0\% & 89.9ms & 0.329 \\
+Additive & 0.35 & 0.327$\pm$0.011 & 89.0\% & 15.8ms & 0.318 \\
+Entropy-weighted & 0.4 & 0.359$\pm$0.007 & 55.8\% & 127.1ms & 0.325 \\
+\bottomrule
+\end{tabular}
+\end{table}

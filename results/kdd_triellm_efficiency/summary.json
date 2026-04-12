@@ -1,0 +1,29 @@
+{
+  "config": {
+    "sample_size": 1000000,
+    "num_requests": 100,
+    "early_exit_threshold": 0.3
+  },
+  "latency": {
+    "trie_llm": {
+      "mean": 0.18507957458496094,
+      "p50": 0.17940998077392578,
+      "p99": 0.29095172882080095
+    },
+    "trie_only": {
+      "mean": 43.73754024505615,
+      "p50": 43.274641036987305,
+      "p99": 58.10206174850464
+    }
+  },
+  "compression": {
+    "ratio": 0.1778378378378379,
+    "tokens_saved": 60.84,
+    "reduction_pct": 82.2162162162162
+  },
+  "optimization": {
+    "early_exit_rate": 1.0,
+    "cache_hit_rate": 0.0,
+    "llm_call_rate": 0.0
+  }
+}

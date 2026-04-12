@@ -1,0 +1,13 @@
+{
+  "timestamp": "20260405_094954",
+  "args": {
+    "samples": 1000,
+    "seeds": "42,43,44",
+    "pool_size": 20,
+    "device": "cuda:0",
+    "device_map": "auto",
+    "models": "Qwen3.5-9B",
+    "output_dir": "results/kdd_response_model_scale_2025"
+  },
+  "results": {}
+}

@@ -1,0 +1,44 @@
+{
+  "timestamp": "20260405_165136",
+  "args": {
+    "samples": 300,
+    "seeds": "42,43,44",
+    "pool_size": 20,
+    "device": "cuda:0",
+    "device_map": "",
+    "models": "Qwen3.5-4B",
+    "output_dir": "results/kdd_response_model_scale_2025"
+  },
+  "results": {
+    "Qwen3.5-4B (2026)": {
+      "hit@5_mean": 0.39999999999999997,
+      "hit@5_std": 0.016996731711975962,
+      "latency_ms_mean": 3371.17763286159,
+      "year": 2026,
+      "params": "4.0B",
+      "seed_results": [
+        {
+          "hit@5": 0.4066666666666667,
+          "trie_hit@5": 0.33,
+          "latency_ms_mean": 3135.734000647984,
+          "latency_ms_p50": 3119.796054495964,
+          "n_samples": 300
+        },
+        {
+          "hit@5": 0.4166666666666667,
+          "trie_hit@5": 0.32,
+          "latency_ms_mean": 3182.5241268833634,
+          "latency_ms_p50": 3175.104422029108,
+          "n_samples": 300
+        },
+        {
+          "hit@5": 0.37666666666666665,
+          "trie_hit@5": 0.3433333333333333,
+          "latency_ms_mean": 3795.274771053422,
+          "latency_ms_p50": 3843.336238001939,
+          "n_samples": 300
+        }
+      ]
+    }
+  }
+}

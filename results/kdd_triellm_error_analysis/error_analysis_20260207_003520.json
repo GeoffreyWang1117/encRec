@@ -1,0 +1,261 @@
+{
+  "overall_hit5": 0.2405,
+  "by_category": {
+    "movies": {
+      "count": 48,
+      "hit_at_5": 0.5833333333333334,
+      "std": 0.4930066485916347
+    },
+    "foodanddrink": {
+      "count": 102,
+      "hit_at_5": 0.4215686274509804,
+      "std": 0.493810206253452
+    },
+    "entertainment": {
+      "count": 65,
+      "hit_at_5": 0.4153846153846154,
+      "std": 0.4927882270168297
+    },
+    "lifestyle": {
+      "count": 230,
+      "hit_at_5": 0.2826086956521739,
+      "std": 0.45026772124365183
+    },
+    "health": {
+      "count": 95,
+      "hit_at_5": 0.2631578947368421,
+      "std": 0.4403473823863555
+    },
+    "finance": {
+      "count": 172,
+      "hit_at_5": 0.2558139534883721,
+      "std": 0.4363177450998538
+    },
+    "music": {
+      "count": 133,
+      "hit_at_5": 0.24812030075187969,
+      "std": 0.43192200349909987
+    },
+    "tv": {
+      "count": 133,
+      "hit_at_5": 0.21804511278195488,
+      "std": 0.41291820203747304
+    },
+    "autos": {
+      "count": 57,
+      "hit_at_5": 0.21052631578947367,
+      "std": 0.40768245749551757
+    },
+    "news": {
+      "count": 591,
+      "hit_at_5": 0.2098138747884941,
+      "std": 0.4071756534159824
+    },
+    "sports": {
+      "count": 234,
+      "hit_at_5": 0.1623931623931624,
+      "std": 0.36881109419472513
+    },
+    "video": {
+      "count": 28,
+      "hit_at_5": 0.14285714285714285,
+      "std": 0.3499271061118826
+    },
+    "travel": {
+      "count": 77,
+      "hit_at_5": 0.11688311688311688,
+      "std": 0.3212809578403372
+    },
+    "weather": {
+      "count": 35,
+      "hit_at_5": 0.0,
+      "std": 0.0
+    }
+  },
+  "by_history_length": {
+    "1-3": {
+      "count": 65,
+      "hit_at_5": 0.2923076923076923,
+      "std": 0.4548229384336763
+    },
+    "4-6": {
+      "count": 231,
+      "hit_at_5": 0.27705627705627706,
+      "std": 0.4475445189028601
+    },
+    "7-10": {
+      "count": 198,
+      "hit_at_5": 0.24242424242424243,
+      "std": 0.42854956435548325
+    },
+    "11-15": {
+      "count": 210,
+      "hit_at_5": 0.2714285714285714,
+      "std": 0.44469664046495383
+    },
+    "16-20": {
+      "count": 136,
+      "hit_at_5": 0.29411764705882354,
+      "std": 0.4556450995538137
+    },
+    "21+": {
+      "count": 1160,
+      "hit_at_5": 0.21810344827586206,
+      "std": 0.4129580294969943
+    }
+  },
+  "by_popularity": {
+    "cold (0)": {
+      "count": 1765,
+      "hit_at_5": 0.23626062322946176,
+      "std": 0.42478411121496534
+    },
+    "rare (1-p25)": {
+      "count": 37,
+      "hit_at_5": 0.24324324324324326,
+      "std": 0.4290407531456093
+    },
+    "moderate (p25-p50)": {
+      "count": 39,
+      "hit_at_5": 0.1282051282051282,
+      "std": 0.3343180720616743
+    },
+    "popular (p50-p75)": {
+      "count": 41,
+      "hit_at_5": 0.4146341463414634,
+      "std": 0.492658777481077
+    },
+    "very popular (>p75)": {
+      "count": 118,
+      "hit_at_5": 0.2796610169491525,
+      "std": 0.44883263311408006
+    }
+  },
+  "by_category_match": {
+    "category_match": {
+      "count": 611,
+      "hit_at_5": 0.26677577741407527
+    },
+    "category_mismatch": {
+      "count": 1389,
+      "hit_at_5": 0.22894168466522677
+    }
+  },
+  "failure_cases": [
+    {
+      "ground_truth": {
+        "id": "N45124",
+        "title": "The News In Cartoons",
+        "category": "news"
+      },
+      "recommendations": [
+        {
+          "title": "Is There Such A Thing As A Harmless Crush When You're Marrie",
+          "category": "lifestyle"
+        },
+        {
+          "title": "Zimbabwean girl, 11, says she wrestled crocodile, gouged out",
+          "category": "news"
+        },
+        {
+          "title": "Trump says the whistleblower is a 'radical'",
+          "category": "news"
+        }
+      ],
+      "history_length": 196,
+      "category_match": true
+    },
+    {
+      "ground_truth": {
+        "id": "N45124",
+        "title": "The News In Cartoons",
+        "category": "news"
+      },
+      "recommendations": [
+        {
+          "title": "What is a tardigrade?",
+          "category": "weather"
+        },
+        {
+          "title": "Tony Romo, Jim Nantz call part of Packers-Chargers game from",
+          "category": "sports"
+        },
+        {
+          "title": "Texans' Deshaun Watson makes option play click on Keke Coute",
+          "category": "sports"
+        }
+      ],
+      "history_length": 111,
+      "category_match": true
+    },
+    {
+      "ground_truth": {
+        "id": "N45124",
+        "title": "The News In Cartoons",
+        "category": "news"
+      },
+      "recommendations": [
+        {
+          "title": "The Best Hotels in the U.S.: 2019 Readers' Choice Awards",
+          "category": "travel"
+        },
+        {
+          "title": "LGBTQ Anti-Discrimination Law Proposed In Ohio: Patch PM",
+          "category": "news"
+        },
+        {
+          "title": "5 takeaways from Colts' 16-12 loss vs. Dolphins",
+          "category": "sports"
+        }
+      ],
+      "history_length": 10,
+      "category_match": true
+    },
+    {
+      "ground_truth": {
+        "id": "N45124",
+        "title": "The News In Cartoons",
+        "category": "news"
+      },
+      "recommendations": [
+        {
+          "title": "Genetic genealogy, law enforcement's new crime-solving lead,",
+          "category": "news"
+        },
+        {
+          "title": "Ben Askren: 'I guess I was overconfident' in loss to Demian ",
+          "category": "sports"
+        },
+        {
+          "title": "Beto O'Rourke fundraising improves, but still lags behind le",
+          "category": "news"
+        }
+      ],
+      "history_length": 100,
+      "category_match": true
+    },
+    {
+      "ground_truth": {
+        "id": "N45124",
+        "title": "The News In Cartoons",
+        "category": "news"
+      },
+      "recommendations": [
+        {
+          "title": "11-year-old dies after being hit by SUV while trunk-or-treat",
+          "category": "tv"
+        },
+        {
+          "title": "What $3,000 rents in NYC right now",
+          "category": "finance"
+        },
+        {
+          "title": "West Allis man charged in hit-and-run that injured two boys,",
+          "category": "news"
+        }
+      ],
+      "history_length": 91,
+      "category_match": true
+    }
+  ]
+}

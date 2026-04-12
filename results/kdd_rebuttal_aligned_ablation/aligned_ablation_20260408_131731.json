@@ -1,0 +1,82 @@
+{
+  "timestamp": "20260408_131731",
+  "args": {
+    "samples": 50,
+    "seeds": "42",
+    "pool_size": 20,
+    "k": 5,
+    "tau": 0.4,
+    "device": "cuda:0",
+    "output_dir": "results/kdd_rebuttal_aligned_ablation"
+  },
+  "aggregate": {
+    "full": {
+      "mean": 0.5,
+      "std": 0.0,
+      "seeds": [
+        0.5
+      ]
+    },
+    "no_early_exit": {
+      "mean": 0.5,
+      "std": 0.0,
+      "seeds": [
+        0.5
+      ]
+    },
+    "no_compression": {
+      "mean": 0.48,
+      "std": 0.0,
+      "seeds": [
+        0.48
+      ]
+    },
+    "no_ctr": {
+      "mean": 0.5,
+      "std": 0.0,
+      "seeds": [
+        0.5
+      ]
+    },
+    "no_trie_filter": {
+      "mean": 0.5,
+      "std": 0.0,
+      "seeds": [
+        0.5
+      ]
+    },
+    "trie_only": {
+      "mean": 0.36,
+      "std": 0.0,
+      "seeds": [
+        0.36
+      ]
+    },
+    "llm_only": {
+      "mean": 0.5,
+      "std": 0.0,
+      "seeds": [
+        0.5
+      ]
+    },
+    "exit_rate": {
+      "mean": 0.04,
+      "std": 0.0,
+      "seeds": [
+        0.04
+      ]
+    }
+  },
+  "per_seed": [
+    {
+      "full": 0.5,
+      "no_early_exit": 0.5,
+      "no_compression": 0.48,
+      "no_ctr": 0.5,
+      "no_trie_filter": 0.5,
+      "trie_only": 0.36,
+      "llm_only": 0.5,
+      "exit_rate": 0.04
+    }
+  ]
+}

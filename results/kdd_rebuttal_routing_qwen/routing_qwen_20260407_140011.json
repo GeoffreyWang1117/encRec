@@ -1,0 +1,81 @@
+{
+  "timestamp": "20260407_140011",
+  "args": {
+    "samples": 2000,
+    "seeds": "42,43,44",
+    "pool_size": 20,
+    "k": 5,
+    "device": "cuda:0",
+    "device_map": "",
+    "models": "Qwen/Qwen3.5-4B",
+    "quant": "",
+    "output_dir": "results/kdd_rebuttal_routing_qwen"
+  },
+  "results": {
+    "Qwen/Qwen3.5-4B": {
+      "trie_only": {
+        "hit@5_mean": 0.317,
+        "hit@5_std": 0.0029439202887759515,
+        "hit@5_seeds": [
+          0.314,
+          0.316,
+          0.321
+        ]
+      },
+      "llm_only": {
+        "hit@5_mean": 0.3793333333333333,
+        "hit@5_std": 0.005720334100576843,
+        "hit@5_seeds": [
+          0.3715,
+          0.385,
+          0.3815
+        ],
+        "latency_ms_mean": 7091.426566967352
+      },
+      "trie_llm_tau0.3": {
+        "hit@5_mean": 0.35366666666666663,
+        "hit@5_std": 0.005137011669140819,
+        "hit@5_seeds": [
+          0.347,
+          0.3595,
+          0.3545
+        ],
+        "exit_rate_mean": 0.622,
+        "latency_ms_mean": 2670.1364474891925
+      },
+      "trie_llm_tau0.4": {
+        "hit@5_mean": 0.3711666666666667,
+        "hit@5_std": 0.005948856099191588,
+        "hit@5_seeds": [
+          0.3635,
+          0.378,
+          0.372
+        ],
+        "exit_rate_mean": 0.3621666666666667,
+        "latency_ms_mean": 4516.873597343212
+      },
+      "trie_llm_tau0.5": {
+        "hit@5_mean": 0.38466666666666666,
+        "hit@5_std": 0.005482294734466181,
+        "hit@5_seeds": [
+          0.377,
+          0.3895,
+          0.3875
+        ],
+        "exit_rate_mean": 0.17966666666666664,
+        "latency_ms_mean": 5812.6301344945105
+      },
+      "trie_llm_tau0.6": {
+        "hit@5_mean": 0.3875,
+        "hit@5_std": 0.007071067811865481,
+        "hit@5_seeds": [
+          0.3775,
+          0.3925,
+          0.3925
+        ],
+        "exit_rate_mean": 0.09816666666666667,
+        "latency_ms_mean": 6391.425693053112
+      }
+    }
+  }
+}

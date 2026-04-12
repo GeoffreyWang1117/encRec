@@ -1,0 +1,142 @@
+{
+  "timestamp": "20260407_034035",
+  "args": {
+    "samples": 1000,
+    "seeds": "42,43,44",
+    "experiments": [
+      "e1",
+      "e2",
+      "e4"
+    ],
+    "pool_size": 20,
+    "k": 5,
+    "device": "cuda:0",
+    "output_dir": "results/kdd_rebuttal_orthogonality_v2"
+  },
+  "results": {
+    "e1_semantic_degradation": {
+      "0.0": {
+        "llm_hit5": 0.39433333333333337,
+        "llm_hit5_std": 0.008956685895029582,
+        "trie_hit5": 0.318,
+        "trie_hit5_std": 0.0014142135623730965
+      },
+      "0.2": {
+        "llm_hit5": 0.39200000000000007,
+        "llm_hit5_std": 0.009899494936611674,
+        "trie_hit5": 0.318,
+        "trie_hit5_std": 0.0014142135623730965
+      },
+      "0.4": {
+        "llm_hit5": 0.349,
+        "llm_hit5_std": 0.0028284271247461927,
+        "trie_hit5": 0.318,
+        "trie_hit5_std": 0.0014142135623730965
+      },
+      "0.6": {
+        "llm_hit5": 0.2953333333333333,
+        "llm_hit5_std": 0.010402991022884832,
+        "trie_hit5": 0.318,
+        "trie_hit5_std": 0.0014142135623730965
+      },
+      "0.8": {
+        "llm_hit5": 0.27466666666666667,
+        "llm_hit5_std": 0.010208928554075689,
+        "trie_hit5": 0.318,
+        "trie_hit5_std": 0.0014142135623730965
+      },
+      "1.0": {
+        "llm_hit5": 0.24766666666666667,
+        "llm_hit5_std": 0.0030912061651652374,
+        "trie_hit5": 0.318,
+        "trie_hit5_std": 0.0014142135623730965
+      }
+    },
+    "e2_statistical_degradation": {
+      "clean": {
+        "llm_hit5": 0.39433333333333337,
+        "llm_hit5_std": 0.008956685895029582,
+        "trie_hit5": 0.318,
+        "trie_hit5_std": 0.0014142135623730965
+      },
+      "noise_ctr": {
+        "llm_hit5": 0.39433333333333337,
+        "llm_hit5_std": 0.008956685895029582,
+        "trie_hit5": 0.3013333333333333,
+        "trie_hit5_std": 0.0016996731711975965
+      },
+      "noise_cat": {
+        "llm_hit5": 0.39433333333333337,
+        "llm_hit5_std": 0.008956685895029582,
+        "trie_hit5": 0.26866666666666666,
+        "trie_hit5_std": 0.006128258770283417
+      },
+      "noise_both": {
+        "llm_hit5": 0.39433333333333337,
+        "llm_hit5_std": 0.008956685895029582,
+        "trie_hit5": 0.318,
+        "trie_hit5_std": 0.0014142135623730965
+      }
+    },
+    "e4_per_sample_gain": {
+      "n_samples_per_seed": 1000,
+      "pct_llm_wins_mean": 0.257,
+      "pct_trie_wins_mean": 0.18066666666666667,
+      "pct_ties_mean": 0.5623333333333334,
+      "corr_pref_strength_mean": 0.014874705893219839,
+      "corr_pref_strength_std": 0.0026358803510187797,
+      "corr_ttr_mean": 0.01577638800005284,
+      "corr_ttr_std": 0.0202200834573092,
+      "seed_results": [
+        {
+          "n_total": 1000,
+          "n_decisive": 429,
+          "n_llm_wins": 249,
+          "n_trie_wins": 180,
+          "n_ties": 571,
+          "pct_llm_wins": 0.249,
+          "pct_trie_wins": 0.18,
+          "pct_ties": 0.571,
+          "corr_pref_strength_vs_gain": 0.01849411359795695,
+          "corr_ttr_vs_gain": -0.006412118320081148,
+          "mean_pref_when_llm_wins": 0.39819888037231094,
+          "mean_pref_when_trie_wins": 0.38574717842261697,
+          "mean_ttr_when_llm_wins": 0.997737418892628,
+          "mean_ttr_when_trie_wins": 0.9984508547008547
+        },
+        {
+          "n_total": 1000,
+          "n_decisive": 438,
+          "n_llm_wins": 255,
+          "n_trie_wins": 183,
+          "n_ties": 562,
+          "pct_llm_wins": 0.255,
+          "pct_trie_wins": 0.183,
+          "pct_ties": 0.562,
+          "corr_pref_strength_vs_gain": 0.012292529557524174,
+          "corr_ttr_vs_gain": 0.042492110456951504,
+          "mean_pref_when_llm_wins": 0.4073071998049233,
+          "mean_pref_when_trie_wins": 0.40184286592067137,
+          "mean_ttr_when_llm_wins": 0.9983750966449929,
+          "mean_ttr_when_trie_wins": 0.9960972694579252
+        },
+        {
+          "n_total": 1000,
+          "n_decisive": 446,
+          "n_llm_wins": 267,
+          "n_trie_wins": 179,
+          "n_ties": 554,
+          "pct_llm_wins": 0.267,
+          "pct_trie_wins": 0.179,
+          "pct_ties": 0.554,
+          "corr_pref_strength_vs_gain": 0.01383747452417839,
+          "corr_ttr_vs_gain": 0.011249171863288165,
+          "mean_pref_when_llm_wins": 0.40846985144520537,
+          "mean_pref_when_trie_wins": 0.40282957981342543,
+          "mean_ttr_when_llm_wins": 0.9975153270758028,
+          "mean_ttr_when_trie_wins": 0.997003229545129
+        }
+      ]
+    }
+  }
+}

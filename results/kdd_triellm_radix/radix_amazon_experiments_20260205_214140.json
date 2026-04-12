@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-02-05T21:35:07.383588",
+  "experiments": [
+    {
+      "name": "mind_large",
+      "n_items": 100000,
+      "timestamp": "2026-02-05T21:41:39.031542",
+      "std_build_time_s": 0.6519923210144043,
+      "std_nodes": 102876,
+      "radix_build_time_s": 0.7107758522033691,
+      "radix_nodes": 102876,
+      "radix_avg_edge_len": 1.1171215832652903,
+      "radix_mem_mb": 34.87215614318848,
+      "node_reduction_pct": 0.0,
+      "std_mem_mb_estimate": 9.811019897460938,
+      "memory_savings_pct": -255.43864458182668,
+      "std_query_ms": 0.001099538803100586,
+      "radix_query_ms": 0.001689910888671875,
+      "query_speedup": 0.6506489841986456,
+      "std_prefix_short_ms": 0.029015541076660156,
+      "radix_prefix_short_ms": 0.02591848373413086,
+      "prefix_short_speedup": 1.1194922270260326,
+      "std_prefix_long_ms": 0.0027489662170410156,
+      "radix_prefix_long_ms": 0.002963542938232422,
+      "prefix_long_speedup": 0.9275945293644409,
+      "std_category_ms": 0.09446382522583008,
+      "radix_category_ms": 0.13228178024291992,
+      "errors": 0
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+2026-04-05 03:05:04,720 - INFO - Device: cuda:0 | Samples: 1000 | Runs: 3
+2026-04-05 03:05:04,951 - INFO - Loading MIND 1000 samples ...
+2026-04-05 03:05:04,951 - INFO - Loading MIND large train from /home/coder-gw/Projects/encRec/data/mind/MINDlarge_train
+2026-04-05 03:05:05,178 - INFO - Loaded 101527 news articles
+2026-04-05 03:05:05,447 - INFO - Loaded 9788 behavior records
+2026-04-05 03:05:05,452 - INFO - Created 1000 recommendation samples
+2026-04-05 03:05:05,490 - INFO - Models to evaluate: ['Qwen3-8B (2025)', 'Llama3.1-8B (2024)']
+2026-04-05 03:05:05,490 - INFO - 
+============================================================
+Qwen3-8B (2025) [perplexity]
+============================================================
+2026-04-05 03:05:05,490 - INFO -   Seed 42 ...
+2026-04-05 03:05:08,057 - INFO -   Loading Qwen/Qwen3-8B ...
+2026-04-05 03:05:08,227 - INFO - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-05 03:05:08,251 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-8B/b968826d9c46dd6066d109eabc6255188de91218/config.json "HTTP/1.1 200 OK"
+2026-04-05 03:05:08,372 - INFO - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-8B/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-05 03:05:08,401 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-8B/b968826d9c46dd6066d109eabc6255188de91218/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-05 03:05:08,520 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-05 03:05:08,632 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-05 03:05:09,097 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B "HTTP/1.1 200 OK"
+2026-04-05 03:05:09,202 - INFO - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-05 03:05:09,222 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-8B/b968826d9c46dd6066d109eabc6255188de91218/config.json "HTTP/1.1 200 OK"
+2026-04-05 03:05:09,464 - INFO - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-05 03:05:09,490 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-8B/b968826d9c46dd6066d109eabc6255188de91218/config.json "HTTP/1.1 200 OK"
+2026-04-05 03:05:09,839 - WARNING -   OOM on Qwen3-8B (2025) [perplexity] — skipping
+2026-04-05 03:05:09,880 - INFO - 
+============================================================
+Llama3.1-8B (2024) [perplexity]
+============================================================
+2026-04-05 03:05:09,880 - INFO -   Seed 42 ...
+2026-04-05 03:05:09,881 - INFO -   Loading meta-llama/Llama-3.1-8B-Instruct ...
+2026-04-05 03:05:09,986 - INFO - HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-05 03:05:10,096 - INFO - HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-05 03:05:10,204 - INFO - HTTP Request: GET https://huggingface.co/api/models/meta-llama/Llama-3.1-8B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-05 03:05:10,317 - INFO - HTTP Request: GET https://huggingface.co/api/models/meta-llama/Llama-3.1-8B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-05 03:05:11,169 - INFO - HTTP Request: GET https://huggingface.co/api/models/meta-llama/Llama-3.1-8B-Instruct "HTTP/1.1 200 OK"
+2026-04-05 03:05:11,314 - INFO - HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-05 03:05:11,435 - INFO - HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-05 03:05:11,626 - WARNING -   OOM on Llama3.1-8B (2024) [perplexity] — skipping
+2026-04-05 03:05:11,663 - INFO - 
+Saved: results/kdd_response_model_scale_2025/model_scale_2025_20260405_030511.json
+
+================================================================================
+MODEL SCALE 2025 — Hit@5 Comparison (MIND Large)
+================================================================================
+Model                         Year   Params         Mode        Hit@5    Lat(ms)
+--------------------------------------------------------------------------------
+================================================================================
+
+Key finding: GPT-2's perplexity score reflects its next-token
+prediction strength. Instruction-tuned models excel at generation
+tasks but don't necessarily outperform GPT-2 in perplexity ranking.

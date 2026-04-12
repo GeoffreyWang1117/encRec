@@ -1,0 +1,91 @@
+2026-04-07 02:05:00,933 INFO Loading MIND 1000 samples ...
+2026-04-07 02:05:00,933 INFO Loading MIND large train from /home/coder-gw/Projects/encRec/data/mind/MINDlarge_train
+2026-04-07 02:05:01,311 INFO Loaded 101527 news articles
+2026-04-07 02:05:01,653 INFO Loaded 9788 behavior records
+2026-04-07 02:05:01,663 INFO Created 1000 recommendation samples
+2026-04-07 02:05:05,669 INFO HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-07 02:05:05,782 INFO HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-07 02:05:05,889 INFO HTTP Request: GET https://huggingface.co/api/models/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-04-07 02:05:05,999 INFO HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-07 02:05:06,099 INFO HTTP Request: GET https://huggingface.co/api/models/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-04-07 02:05:06,205 INFO HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-07 02:05:06,553 INFO HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-07 02:05:07,016 INFO HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 28519.57it/s]
+2026-04-07 02:05:07,198 INFO HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/generation_config.json "HTTP/1.1 200 OK"
+2026-04-07 02:05:07,917 INFO 
+=== E1: Semantic Degradation ===
+2026-04-07 02:05:07,917 INFO   Seed 42
+`loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+2026-04-07 02:10:00,784 INFO   E1 [200/1000] llm(0%)=0.390 trie=0.345
+2026-04-07 02:15:06,180 INFO   E1 [400/1000] llm(0%)=0.390 trie=0.347
+2026-04-07 02:20:06,796 INFO   E1 [600/1000] llm(0%)=0.382 trie=0.322
+2026-04-07 02:24:54,000 INFO   E1 [800/1000] llm(0%)=0.385 trie=0.324
+2026-04-07 02:30:02,232 INFO   E1 [1000/1000] llm(0%)=0.388 trie=0.319
+2026-04-07 02:30:02,237 INFO   Seed 43
+2026-04-07 02:35:00,680 INFO   E1 [200/1000] llm(0%)=0.415 trie=0.320
+2026-04-07 02:39:18,327 INFO   E1 [400/1000] llm(0%)=0.417 trie=0.338
+2026-04-07 02:43:44,021 INFO   E1 [600/1000] llm(0%)=0.395 trie=0.312
+2026-04-07 02:48:09,029 INFO   E1 [800/1000] llm(0%)=0.391 trie=0.316
+2026-04-07 02:52:26,362 INFO   E1 [1000/1000] llm(0%)=0.388 trie=0.316
+2026-04-07 02:52:26,364 INFO   Seed 44
+2026-04-07 02:56:46,555 INFO   E1 [200/1000] llm(0%)=0.435 trie=0.355
+2026-04-07 03:01:15,119 INFO   E1 [400/1000] llm(0%)=0.427 trie=0.362
+2026-04-07 03:05:48,589 INFO   E1 [600/1000] llm(0%)=0.412 trie=0.327
+2026-04-07 03:10:09,309 INFO   E1 [800/1000] llm(0%)=0.405 trie=0.323
+2026-04-07 03:14:25,535 INFO   E1 [1000/1000] llm(0%)=0.407 trie=0.319
+2026-04-07 03:14:25,537 INFO 
+=== E2: Statistical Degradation ===
+2026-04-07 03:14:25,538 INFO   Seed 42
+2026-04-07 03:15:17,220 INFO   E2 [200/1000] trie_clean=0.345 trie_noise_both=0.345 llm=0.390
+2026-04-07 03:16:11,757 INFO   E2 [400/1000] trie_clean=0.347 trie_noise_both=0.347 llm=0.390
+2026-04-07 03:17:03,269 INFO   E2 [600/1000] trie_clean=0.322 trie_noise_both=0.322 llm=0.382
+2026-04-07 03:17:53,812 INFO   E2 [800/1000] trie_clean=0.324 trie_noise_both=0.324 llm=0.385
+2026-04-07 03:18:48,268 INFO   E2 [1000/1000] trie_clean=0.319 trie_noise_both=0.319 llm=0.388
+2026-04-07 03:18:48,272 INFO   Seed 43
+2026-04-07 03:19:39,245 INFO   E2 [200/1000] trie_clean=0.320 trie_noise_both=0.320 llm=0.415
+2026-04-07 03:20:32,170 INFO   E2 [400/1000] trie_clean=0.338 trie_noise_both=0.338 llm=0.417
+2026-04-07 03:21:22,780 INFO   E2 [600/1000] trie_clean=0.312 trie_noise_both=0.312 llm=0.395
+2026-04-07 03:22:12,329 INFO   E2 [800/1000] trie_clean=0.316 trie_noise_both=0.316 llm=0.391
+2026-04-07 03:23:05,685 INFO   E2 [1000/1000] trie_clean=0.316 trie_noise_both=0.316 llm=0.388
+2026-04-07 03:23:05,686 INFO   Seed 44
+2026-04-07 03:24:01,123 INFO   E2 [200/1000] trie_clean=0.355 trie_noise_both=0.355 llm=0.435
+2026-04-07 03:25:00,656 INFO   E2 [400/1000] trie_clean=0.362 trie_noise_both=0.362 llm=0.427
+2026-04-07 03:25:49,780 INFO   E2 [600/1000] trie_clean=0.327 trie_noise_both=0.327 llm=0.412
+2026-04-07 03:26:37,947 INFO   E2 [800/1000] trie_clean=0.323 trie_noise_both=0.323 llm=0.405
+2026-04-07 03:27:29,698 INFO   E2 [1000/1000] trie_clean=0.319 trie_noise_both=0.319 llm=0.407
+2026-04-07 03:27:29,700 INFO 
+=== E4: Per-Sample Gain ===
+2026-04-07 03:27:29,700 INFO   Seed 42
+2026-04-07 03:31:53,421 INFO     llm_wins=24.9% trie_wins=18.0% r(pref,gain)=0.018 r(ttr,gain)=-0.006
+2026-04-07 03:31:53,421 INFO   Seed 43
+2026-04-07 03:36:18,516 INFO     llm_wins=25.5% trie_wins=18.3% r(pref,gain)=0.012 r(ttr,gain)=0.042
+2026-04-07 03:36:18,516 INFO   Seed 44
+2026-04-07 03:40:35,771 INFO     llm_wins=26.7% trie_wins=17.9% r(pref,gain)=0.014 r(ttr,gain)=0.011
+2026-04-07 03:40:35,851 INFO Saved: results/kdd_rebuttal_orthogonality_v2/orthogonality_v2_20260407_034035.json
+
+======================================================================
+
+E1 SEMANTIC DEGRADATION (Trie should be invariant to masking):
+  Mask%         LLM Hit@5   Trie Hit@5    Δ(LLM-Trie)
+  --------------------------------------------------
+  0%        0.394±0.009  0.318±0.001  +0.076
+  20%        0.392±0.010  0.318±0.001  +0.074
+  40%        0.349±0.003  0.318±0.001  +0.031
+  60%        0.295±0.010  0.318±0.001  -0.023
+  80%        0.275±0.010  0.318±0.001  -0.043
+  100%        0.248±0.003  0.318±0.001  -0.070
+
+E2 STATISTICAL DEGRADATION (LLM should be invariant to CTR/cat noise):
+  Condition          LLM Hit@5   Trie Hit@5     Trie Δ
+  -------------------------------------------------------
+  clean           0.394±0.009  0.318±0.001  +0.000
+  noise_ctr       0.394±0.009  0.301±0.002  -0.017
+  noise_cat       0.394±0.009  0.269±0.006  -0.049
+  noise_both      0.394±0.009  0.318±0.001  +0.000
+
+E4 PER-SAMPLE GAIN:
+  LLM wins: 25.7%, Trie wins: 18.1%, Ties: 56.2%
+  r(pref_strength, gain) = 0.015 ± 0.003
+  r(TTR, gain)           = 0.016 ± 0.020
+======================================================================
