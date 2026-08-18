@@ -1,3 +1,20 @@
+> [!WARNING]
+> **This artifact is superseded — see [ERRATUM.md](ERRATUM.md) before using anything here.**
+>
+> Three defects were found by the authors after publication:
+> 1. The headline `Trie+LLM (aligned) = 0.418` below is **mislabeled**. It is an
+>    **LLM-only** result from a single seed; the actual hybrid pipeline scores
+>    **0.331 ± .002** at 5000 samples x 3 seeds.
+> 2. The Trie's "CTR" is computed as `clicks/impressions` after incrementing both
+>    counters identically, so it is **identically 1.0** — a binary seen/unseen flag,
+>    not a CTR.
+> 3. The cross-domain comparison is affected by **uniform negative sampling**. Under
+>    popularity-matched negatives, Goodreads Trie-only falls from 0.874 to 0.232 —
+>    below the random floor.
+>
+> The code and numbers below are left exactly as they were run, so that the published
+> results stay reproducible and the defects independently checkable.
+
 # Supplementary Materials — KDD 2026 Submission #4023
 
 **Title**: Cost-Aware Conditional Computation for LLM Recommendation: A Deterministic Routing Framework
